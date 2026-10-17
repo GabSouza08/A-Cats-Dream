@@ -31,9 +31,7 @@ define m_a = Character("Mila & Artur", color="FFFFFF")
 
 label start:
 
-    # WE YEARN FOR THE WLW
-
-    scene bg cchla_external
+    scene cchla_ext
 
     cm "Do you think, that maybe, there is a way out of this?"
 
@@ -77,7 +75,7 @@ label ch1:
     show text "Somewhere, in the outskirts of CCS..."
     with Pause(3)
 
-    scene ccs_outer with dissolve
+    scene ccs_ext with dissolve
     with Pause(1)
 
     k "I feel weird. Why? Why did this happen? WHY?"
@@ -90,7 +88,7 @@ label ch1:
     show text "2 Hours later...." with dissolve
     with Pause(3)
 
-    scene bg ccs_outer with dissolve
+    scene ccs_ext with dissolve
     with Pause(1)
 
     k "Ugh.. why do i feel.."
@@ -106,7 +104,7 @@ label ch1:
     $ renpy.notify("You feel a little hungrier..")
     $ hunger_lv += 1
 
-    scene bg ccj with dissolve
+    scene demid_ext with dissolve
 
     k "Ugh, i am hungry. I heard some cats hijacked the RU, maybe i could join them or something."
 
@@ -132,7 +130,7 @@ label ch1p2:
 
     hide text
     with Pause(1)
-    scene ct with dissolve
+    scene ru_forest with dissolve
 
     "Huh? another cat? Though your appearance reignites a memory in me i seem to have forgotten..."
 
@@ -148,7 +146,7 @@ label ch1p2:
 
     m "I feel like she shall do a fine addition to our group!"
 
-    m "I am Mila, and im pleased to meet you! \n Those are Artur, Juju and Lynx!"
+    m "I am Mila, and im pleased to meet you! \nThose are Artur, Juju and Lynx!"
 
     m "Soo, what brings you here?"
 
@@ -208,6 +206,7 @@ label ch1p2:
                 $ nuzzle = "Juju"
                 j "Oh, this is nice.. I knew you would love this!"
             "Do nothing":
+                $ nuzzle = ""
     
     "You keep wondering what this world has on store for you."
 
@@ -296,12 +295,12 @@ label ch1p2:
         "Stretch and walk a little?":
             "*You walk a little, as they keep eating.*"
     
-    scene black
+    scene black with dissolve
 
     show text "Some hours later..."
     with Pause(3)
 
-    scene ccj
+    scene ru with dissolve
 
     a "So, what is our first adventure going to possibly be?"
 
@@ -310,5 +309,39 @@ label ch1p2:
     l "....zzzzz"
 
     m "I agree with Lynx over there."
+
+    j "Yeah."
+
+    k "Sooo?"
+
+    m "We are tired, at least half of us, don't worry."
+
+    k "Thankfully, yeah."
+
+    m "Is there any place you want to go?"
+
+    l "...Huh? go somewhere? *yawns*"
+
+    m "Oh, my! Guess the sleepyhead woke up."
+
+    l "...I smell someone. *walks inside the RU*"
+
+    scene black
+
+    k "I think i have seen this person somewhere."
+
+    "From here i can see him nuzzling into her incessantly. But why?"
+
+    "I must remember i am here to..."
+
+    "...Why am i here...?"
+
+    m "Are you fine? You closed your eyes while still standing!"
+
+    scene ru with Flash
+
+    k "I am fine, no worry!"
+
+    m "I really hope!"
 
     return
