@@ -7,27 +7,75 @@ default artur_event = False
 default let_her_go = False
 default a_free_soul = False
 default nuzzle = ""
+default nuzzlev2 = ""
 default artur_rl = 0
 default lynx_rl = 0
 default mila_rl = 0
 default juju_rl = 0
 default hunger_lv = 0
+default ending = ""
+
+
+# lynx is a black cat
+# artur is pure orange energy and we all know it
+# idk regarding mila
+#
 
 define cm = Character("Classmate")
 define k = Character("Katie", color="5D6161")
 define m = Character("Mila", color="FFFFFF")
 define j = Character("Juju", color="FFDD8C")
 define a = Character("Artur", color="FFAE00")
-define l = Character("Lynx", color="000000")
+define l = Character("Lynx", color="525252")
 define m_a = Character("Mila & Artur", color="FFFFFF")
+
+define text_pool = [
+    "Fight for what you believe in, okay?",
+    "And we thought we could change fate.",
+    "Mockery against heaven, is that what we became?",
+    "Then, there was none.",
+    "So, have you found a reason to fight yet?",
+    "We are all slaves to history. Even after everything.",
+    "Every dream we ever had could never save you.",
+    "Katie, Katie, can you hear my plea?",
+    "Artur is quicker than Juju. - Artur",
+    "All the things she said, running through my head...",
+    "Forgive me Mila, for i had a dream.",
+    "Bleh.",
+
+]
+
 
 # TODO
 # get some cat pics/assets
-# find pics of things at university
+# find MORE pics of things at university
 # more ao3 poems because yeah
 # turn college kittens or a cats dream into a ao3 fandom
 # finish chapter 1 aka prologue
 # add per cat relationship level
+
+label splashscreen:
+
+    scene black with dissolve
+
+    show text "A Cat's Dream shall never die." with dissolve
+    with Pause(3)
+
+    hide text
+
+    show text "Prototype in Development Phase." with dissolve
+    with Pause(3)
+
+    hide text
+
+    $ lc_text = renpy.random.choice(text_pool)
+
+    # 3. Exibimos a frase sorteada na tela
+    show text "[lc_text]" with dissolve
+    with Pause(3)
+
+    hide text
+
 
 label start:
 
@@ -134,7 +182,7 @@ label ch1p2:
 
     "Huh? another cat? Though your appearance reignites a memory in me i seem to have forgotten..."
 
-    k "{cps=10}Hello? \nhello?? \nWho are you? \nHi?{/cps}"
+    k "{cps=14}Hello? \nhello?? \nWho are you? \nHi?{/cps}"
 
     # play music "audio/in_caeli_fatuus.ogg"
 
@@ -338,10 +386,17 @@ label ch1p2:
 
     m "Are you fine? You closed your eyes while still standing!"
 
-    scene ru with Flash
+    scene ru with dissolve
 
     k "I am fine, no worry!"
 
     m "I really hope!"
+
+    k "But who is she?"
+
+    m "Someone from his past. I think."
+
+    a "Nothing we should worry, though!"
+
 
     return
