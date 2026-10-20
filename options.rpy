@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "0.1"
+define config.version = "0.2"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -32,7 +32,9 @@ define config.version = "0.1"
 define gui.about = _p("""
 A game created during the Digital Games course.\n
 Made originally as a board game, turned digital as a VN.\n
-Special thanks to Mikael and Luiza, for giving me the final push to start making this game.
+Special thanks to Mikael and Luiza, for giving me the final push to start making this game.\n
+And thanks for Izaquiel for playtesting this.\n
+Now featuring Discord RPC!
 """)
 
 
