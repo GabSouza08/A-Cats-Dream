@@ -13,18 +13,14 @@ default lynx_rl = 0
 default mila_rl = 0
 default juju_rl = 0
 default hunger_lv = 0
-<<<<<<< HEAD
 default pairing_m_l = False
 default pairing_a_j = False
 default pairing_k = ""
-=======
->>>>>>> 62c9536529f272907a0cad02849da7adf6686e91
 default ending = ""
 
 
 # lynx is a black cat
 # artur is pure orange energy and we all know it
-<<<<<<< HEAD
 # mila is a fluffy white cat
 # juju is a tricolor cat. cool af.
 
@@ -35,10 +31,6 @@ default ending = ""
 
 
 #act 1 = yay food, act 2 is separation maybe, act 3 is ??? and act 4 is finale or tragedy.
-=======
-# idk regarding mila
-#
->>>>>>> 62c9536529f272907a0cad02849da7adf6686e91
 
 define cm = Character("Classmate")
 define k = Character("Katie", color="5D6161")
@@ -69,23 +61,6 @@ define text_pool = [
     "We don't know no more aaaaa...?"
     "Without beginning or end, the world cycles upon the infinite."
     "I have never hurt a fly, but ive gota walls to climb!"
-
-]
-
-
-define text_pool = [
-    "Fight for what you believe in, okay?",
-    "And we thought we could change fate.",
-    "Mockery against heaven, is that what we became?",
-    "Then, there was none.",
-    "So, have you found a reason to fight yet?",
-    "We are all slaves to history. Even after everything.",
-    "Every dream we ever had could never save you.",
-    "Katie, Katie, can you hear my plea?",
-    "Artur is quicker than Juju. - Artur",
-    "All the things she said, running through my head...",
-    "Forgive me Mila, for i had a dream.",
-    "Bleh.",
 
 ]
 
@@ -458,7 +433,6 @@ label ch1p2:
 
     a "Nothing we should worry, though!"
 
-<<<<<<< HEAD
     a "Hopefully."
 
     "Lynx comes back, seemingly happier."
@@ -602,8 +576,5 @@ label ch1p2:
     #IM NOT BUILT FOR NARRATIVE AAAAAAAAAAAAAAAAAAAAA
 
     l "But"    
+    
     return
-=======
-
-    return
->>>>>>> 62c9536529f272907a0cad02849da7adf6686e91
