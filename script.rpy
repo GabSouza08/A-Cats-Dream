@@ -13,13 +13,32 @@ default lynx_rl = 0
 default mila_rl = 0
 default juju_rl = 0
 default hunger_lv = 0
+<<<<<<< HEAD
+default pairing_m_l = False
+default pairing_a_j = False
+default pairing_k = ""
+=======
+>>>>>>> 62c9536529f272907a0cad02849da7adf6686e91
 default ending = ""
 
 
 # lynx is a black cat
 # artur is pure orange energy and we all know it
+<<<<<<< HEAD
+# mila is a fluffy white cat
+# juju is a tricolor cat. cool af.
+
+#we are all witnesses to a tragedy.
+#todo: write the act 2-4, and the endings. if bad = mila dies by a decorative lily, lynx follows her and eats the lily himself to join her,
+#Artur loses it and sets lotta flowers on fire and accepts it, and Juju sees it and runs into the fire joining him, while Katie becomes a witness
+#At last, Katie gets her jubilation revoked, thus waking up the other day as a normal person, but with all the memories of the chaos.
+
+
+#act 1 = yay food, act 2 is separation maybe, act 3 is ??? and act 4 is finale or tragedy.
+=======
 # idk regarding mila
 #
+>>>>>>> 62c9536529f272907a0cad02849da7adf6686e91
 
 define cm = Character("Classmate")
 define k = Character("Katie", color="5D6161")
@@ -28,6 +47,31 @@ define j = Character("Juju", color="FFDD8C")
 define a = Character("Artur", color="FFAE00")
 define l = Character("Lynx", color="525252")
 define m_a = Character("Mila & Artur", color="FFFFFF")
+define evr = Character("Everyone")
+
+define text_pool = [
+    "Fight for what you believe in, okay?",
+    "And we thought we could change fate.",
+    "Mockery against heaven, is that what we became?",
+    "Then, there was none.",
+    "So, have you found a reason to fight yet?",
+    "We are all slaves to history. Even after everything....",
+    "Every dream we ever had could never save you.",
+    "Katie, Katie, can you hear my plea?",
+    "Artur is quicker than Juju. - Artur",
+    "All the things she said, running through my head...",
+    "Forgive me Mila, for i had a dream.",
+    "Bleh.",
+    "Vae victis fortunarum!",
+    "Oh luna, audi preces meas...",
+    "This game is a banger, we lost 4 cats and a girl for it.",
+    "Don't forget, i'm with you in the dark.",
+    "We don't know no more aaaaa...?"
+    "Without beginning or end, the world cycles upon the infinite."
+    "I have never hurt a fly, but ive gota walls to climb!"
+
+]
+
 
 define text_pool = [
     "Fight for what you believe in, okay?",
@@ -133,6 +177,12 @@ label ch1:
     scene black
     with Pause(1)
 
+    show text "Act 1 - Scattered Angels" with dissolve
+    with Pause(3)
+
+    scene black
+    with Pause(1)
+
     show text "2 Hours later...." with dissolve
     with Pause(3)
 
@@ -144,6 +194,8 @@ label ch1:
     k "{cps=60}WHAT-{/cps}" with vpunch
 
     k "{cps=60}I'm.... a cat?!?{/cps}"
+
+    $ discord.update(state="Jubilated and now turned cat.", details="Act 1/4 - Scattered Angels")
 
     k "Great. that is all i needed."
 
@@ -220,7 +272,7 @@ label ch1p2:
 
         l "Yeah, kinda. You can eat your former things, though in this form... I dont think we should."
 
-        l "After all, those very rich cats eat from anything possibly, so can us."
+        l "Even if those very rich cats eat from anything possibly, they have health checks and people to care, we don't."
 
         k "Yeah. So, food? How can i?"
 
@@ -230,8 +282,6 @@ label ch1p2:
         $ juju_rl += 1
 
         k "Am i that fluffy?"
-
-        "I feel like my hunger level is at [hunger_lv]."
 
         k "This body is so.... yeah."
 
@@ -301,7 +351,7 @@ label ch1p2:
                     $ artur_rl += 1
             
             k "But both have your own opinions, so lets just eat. I am hungry!"
-            "*You munch into the cat food. Hunger is now zero.*"
+            "*You munch into the cat food. You feel no more hunger, for now.*"
             $ hunger_lv = 0
             
         "Eat it":
@@ -317,6 +367,10 @@ label ch1p2:
                     $ mila_rl += 1
                     $ nuzzlev2 = "Mila"
                     m "Mhmm, okay, okay, i see. Just relax, or i will think you like this!"
+                    j "Don't you, though?"
+                    m "Yeah!"
+                    j "So be happy for it!!"
+                    $ discord.update(state="Fangirling for Mila", details="Act 1/4 - Scattered Angels")
                 "Nuzzle by Artur's side":
                     $ artur_rl += 1
                     $ nuzzlev2 = "Artur"
@@ -324,15 +378,21 @@ label ch1p2:
                     l "Theres no cat army!"
                     a "Now there is!"
                     l "Fair."
+                    $ discord.update(state="Rejoicing with Artur", details="Act 1/4 - Scattered Angels")
                 "Nuzzle by Lynx's side":
                     $ lynx_rl += 1
                     $ nuzzlev2 = "Lynx"
                     l "I love this, i cant lie. I crave the warmth of-"
                     j "Ohhh, finally something breaks the mask?"
+                    l "Ugh. I can feel, okay?"
+                    $ discord.update(state="Feeling loved with Lynx", details="Act 1/4 - Scattered Angels")
                 "Nuzzle by Juju's side":
                     $ juju_rl += 1
                     $ nuzzlev2 = "Juju"
                     j "*unintelligible noises*"
+                    j "*more unintelligible noises*"
+                    a "And i am the most chaotic here."
+                    $ discord.update(state="Embracing the chaos of Juju", details="Act 1/4 - Scattered Angels")
 
             
             "You feel a bit closer to them now."
@@ -398,5 +458,152 @@ label ch1p2:
 
     a "Nothing we should worry, though!"
 
+<<<<<<< HEAD
+    a "Hopefully."
+
+    "Lynx comes back, seemingly happier."
+
+    l "Missed me?"
+
+    m "*looks at him surprised*"
+
+    k "You liked that girl, didnt you? Smelling her from a mile away.."
+
+    l "Yeah, i did. Now what? Am i not allowed to savour the scent of someone i ought to love but never could because i have been confined to this body?"
+
+    k "No need to-"
+
+    l "Am i not? Oh, come on. My shyness stood on my way for so long, and even if i want to go back, this form allows me to get closer to what i crave."
+
+    j "Don't mind him, Katie! He's like a moth to the moon. No way of him to change until his love burns him down-"
+
+    a "HEY, DONT SAY THAT!"
+
+    j "Wow. I mean, this is chaos, but hey."
+
+    k "What's her name?"
+
+    l "Not saying it."
+
+    m "Anyways... let us talk about something nicer, okay?"
+
+    scene black with dissolve
+
+    show text "Act 1 Finished." with dissolve
+    with Pause(3)
+    hide text
+
+    show text "Act 2 - Ruptures Across Memories" with dissolve
+    with Pause(3)
+
+    $ discord.update(state="Investigating this chaos...", details="Act 2/4 - Ruptures Across Memories")
+    hide text
+
+    scene cchla_ext with fade
+
+    a "Soooo..."
+
+    m "Just say already what you want, Artur!"
+
+    j "Huh? Mila? Are you alright?"
+
+    m "This place brings me bad memories. I..."
+
+    "I see."
+
+    m "Ugh. it's not your fault anyways."
+
+    m "Neither it was mine."
+
+    a "Come on, cheer up! At least you didn't set fire to a lab accidentally!"
+
+    evr "WHAT THE-" with vpunch
+
+    m "WHAT DID YOU DO?" with vpunch
+
+    j "OOOH IT WAS YOU?"
+
+    l "Can we please calm down?"
+
+    m "Still not worse than the false accusations they put on me."
+
+    m "I was such a nice person to everyone!"
+
+    m "And what they did? They poisoned the drinks of everyone during the yearly course party!"
+
+    l "*listening eagerly*"
+
+    m "They blamed ME for it. \nAnd i had no reason to do it. But they didnt believe. And... and..."
+
+    menu:
+        "...."
+        "Nudge Lynx to comfort her":
+            l "Me? Okay."
+            k "You know her more."
+            "*Lynx nuzzles on her gently.*"
+            "It will be all be fine."
+            $ pairing_m_l = True
+            $ lynx_rl += 1
+            $ discord.update(state="Being a winglady to Lynx", details="Act 2/4 - Ruptures Across Memories")
+
+        "Try to comfort her":
+            $ mila_rl += 1
+            "*You nuzzle on her gently*"
+            m "Thanks, Katie."
+            
+        "Wait":
+            pass
+        
+    m "It was strange, though. I wanted to prove it was a lie."
+
+    m "'Excuse me sir, there must be someone you confused me for!'"
+
+    m "If i could only see someone who knew me or someone who cared for..."
+
+    m "But, its better that way."
+
+    a "Yeah. Now you have... friends!"
+
+    if pairing_m_l == True:
+        l "And love, if you try enough."
+    else:
+        l "No love though, Artur. And we all need it."
+
+    a "I see. *looks at Juju."
+
+    j "Why are you looking at me??"
+
+    a "Nothing! It's not like i should look at someone in the center of the chaos"
+
+    j "Then come on and run from it!"
+
+    "*She dashes away. Artur quickly follows*"
+
+    l "Come on!"
+    
+    "*Mila runs behind them. And so does Lynx*"
+
+    k "Wait for me!"
+
+    scene black with dissolve 
+    with Pause(2)
+    
+    show text "A few minutes later, somewhere else..."
+    with Pause(3)
+    
+    hide text
+
+    scene ccsa_ext with fade
+
+    l "It was a cold and quiet day."
+
+    l "I was just hoping this day to be like any another"
+
+    #IM NOT BUILT FOR NARRATIVE AAAAAAAAAAAAAAAAAAAAA
+
+    l "But"    
+    return
+=======
 
     return
+>>>>>>> 62c9536529f272907a0cad02849da7adf6686e91
