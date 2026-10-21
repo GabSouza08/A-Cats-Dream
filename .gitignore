@@ -1,4 +1,5 @@
 *.rpyc
 *.rpyb
-game/saves/
+/saves
+/cache
 tmp/
