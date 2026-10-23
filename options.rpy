@@ -148,7 +148,7 @@ default preferences.afm_time = 15
 ## This generally should not be changed, and if it is, should always be a
 ## literal string, not an expression.
 
-define config.save_directory = "EverBurningHope-1788199740"
+define config.save_directory = "ACatsDream"
 
 
 ## Icon ########################################################################

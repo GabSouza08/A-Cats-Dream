@@ -25,22 +25,11 @@ default ending = ""
 # juju is a tricolor cat. cool af.
 
 #we are all witnesses to a tragedy.
-#todo: write the act 2-4, and the endings. if bad = mila dies by a decorative lily, lynx follows her and eats the lily himself to join her,
+#todo: write the act 3/4, and the endings. if bad = mila dies by a decorative lily, lynx follows her and eats the lily himself to join her,
 #Artur loses it and sets lotta flowers on fire and accepts it, and Juju sees it and runs into the fire joining him, while Katie becomes a witness
 #At last, Katie gets her expulsion revoked, thus waking up the other day as a normal person, but with all the memories of the chaos.
 
-
-#act 1 = yay food, act 2 is separation maybe, act 3 is ??? and act 4 is finale or tragedy.
-# mila is a fluffy white cat
-# juju is a tricolor cat. cool af.
-
-#we are all witnesses to a tragedy.
-#todo: write the act 2-4, and the endings. if bad = mila dies by a decorative lily, lynx follows her and eats the lily himself to join her,
-#Artur loses it and sets lotta flowers on fire and accepts it, and Juju sees it and runs into the fire joining him, while Katie becomes a witness
-#At last, Katie gets her expulsion revoked, thus waking up the other day as a normal person, but with all the memories of the chaos.
-
-
-#act 1 = yay food, act 2 is separation maybe, act 3 is ??? and act 4 is finale or tragedy.
+#act 1 = yay food, act 2 is lore dumping, act 3 is separation and act 4 is finale or tragedy.
 
 define cm = Character("Classmate")
 define k = Character("Katie", color="5D6161")
@@ -166,15 +155,6 @@ label ch1:
     show text "Act 1 - Scattered Angels" with dissolve
     with Pause(3)
 
-    scene black
-    with Pause(1)
-
-    show text "Act 1 - Scattered Angels" with dissolve
-    with Pause(3)
-
-    scene black
-    with Pause(1)
-
     show text "2 Hours later...." with dissolve
     with Pause(3)
 
@@ -202,13 +182,10 @@ label ch1:
 
     menu beginnings:
         k "Do i, or do i not?"
-        "To be honest, i should. its easier.":
-            jump ch1p2
+        "To be honest, i should. It's easier.":
+            pass
         "Why would i do that, now that i come think of it?":
             $ a_free_soul = True
-            jump ch1p2
-
-label ch1p2:
 
     scene black with dissolve
     with Pause(1)
@@ -344,7 +321,6 @@ label ch1p2:
             
             k "But both have your own opinions, so lets just eat. I am hungry!"
             "*You munch into the cat food. You feel no more hunger, for now.*"
-            "*You munch into the cat food. You feel no more hunger, for now.*"
             $ hunger_lv = 0
             
         "Eat it":
@@ -364,10 +340,6 @@ label ch1p2:
                     m "Yeah!"
                     j "So be happy for it!!"
                     $ discord.update(state="Fangirling for Mila", details="Act 1/4 - Scattered Angels")
-                    j "Don't you, though?"
-                    m "Yeah!"
-                    j "So be happy for it!!"
-                    $ discord.update(state="Fangirling for Mila", details="Act 1/4 - Scattered Angels")
                 "Nuzzle by Artur's side":
                     $ artur_rl += 1
                     $ nuzzlev2 = "Artur"
@@ -376,7 +348,6 @@ label ch1p2:
                     a "Now there is!"
                     l "Fair."
                     $ discord.update(state="Rejoicing with Artur", details="Act 1/4 - Scattered Angels")
-                    $ discord.update(state="Rejoicing with Artur", details="Act 1/4 - Scattered Angels")
                 "Nuzzle by Lynx's side":
                     $ lynx_rl += 1
                     $ nuzzlev2 = "Lynx"
@@ -384,15 +355,10 @@ label ch1p2:
                     j "Ohhh, finally something breaks the mask?"
                     l "Ugh. I can feel, okay?"
                     $ discord.update(state="Feeling loved with Lynx", details="Act 1/4 - Scattered Angels")
-                    l "Ugh. I can feel, okay?"
-                    $ discord.update(state="Feeling loved with Lynx", details="Act 1/4 - Scattered Angels")
                 "Nuzzle by Juju's side":
                     $ juju_rl += 1
                     $ nuzzlev2 = "Juju"
                     j "*unintelligible noises*"
-                    j "*more unintelligible noises*"
-                    a "And i am the most chaotic here."
-                    $ discord.update(state="Embracing the chaos of Juju", details="Act 1/4 - Scattered Angels")
                     j "*more unintelligible noises*"
                     a "And i am the most chaotic here."
                     $ discord.update(state="Embracing the chaos of Juju", details="Act 1/4 - Scattered Angels")
@@ -521,9 +487,9 @@ label ch1p2:
 
     evr "WHAT THE-" with vpunch
 
-    m "WHAT DID YOU DO?" with vpunch
+    m "WHAT DID YOU DO?" with hpunch
 
-    j "OOOH IT WAS YOU?"
+    j "OOOH IT WAS YOU?" with vpunch
 
     l "Can we please calm down?"
 
@@ -543,7 +509,7 @@ label ch1p2:
             l "Me? Okay."
             k "You know her more."
             "*Lynx nuzzles on her gently.*"
-            k "It will be all be fine."
+            l "It will be all be fine."
             $ pairing_m_l = True
             $ lynx_rl += 1
             $ discord.update(state="Being a winglady to Lynx", details="Act 2/4 - Ruptures Across Memories")
@@ -640,4 +606,94 @@ label ch1p2:
     a "Pretty cool i guess?"    
 
     a "Hopefully."
+
+    a "I mean, theres not much i can say."
+
+    menu:
+        k "Hm.."
+        "*pssst* Artur, nudge on her!":
+            a "Sure, seems a better idea!"
+            $ pairing_a_j = True
+        "Wait...":
+            pass
+        
+    
+    k "And i was expelled due to a riot. I mean, antifacist riot but-"
+
+    l "HE WON?"
+
+    k "Not yet, its in two days. but things seem grim."
+
+    l "I see. But, like-"
+
+    "*suddenly someone passing by says something and grabs artur*"
+
+    a "Hey, let me go!"
+
+    "*some other people also grab mila and juju, and also lynx, leaving you, katie, alone.*"
+
+    k "Oh damn it. Ugh, those pesky people. I will find you."
+
+    scene black with dissolve
+
+    show text "Act 2 Finished." with dissolve
+    with Pause(3)
+    hide text
+
+    show text "Act 3 - Across Our Starry Night" with dissolve
+    with Pause(3)
+
+    $ discord.update(state="Investigating this chaos...", details="Act 3/4 - Across Our Starry Night")
+    hide text
+
+    menu:
+        "Who do i search..."
+            "Mila":
+                k "I think that girl was from a close department. I will just follow her..."
+                scene ce_lounge with dissolve
+                m "Mhm."
+                "Mila is limp on someone's arms. Guess she's truly one of these ragdoll cats."
+                m "Oh, Katie, you're here."
+                k "Yeah, you seem to be happy huh."
+                $ mila_rl += 1
+                m "I am, but even so id rather be with the rest of you."
+            "Lynx":
+                k "I know that guy, let me follow him now!"
+                scene ru_ext with dissolve
+                l "I swear people used to say black cats are a bad omen. So why did they also pick me!"
+                k "You're fluffy."
+                $ lynx_rl += 1
+                if pairing_m_l == True:
+                    l "Mila is more fluffy!"
+                    k "Oh, the king can't spend a moment without talking about the queen."
+                    l "*blushes, or would if his cat form allowed him* \nI... COME ON KATIE! \n*Sighs, though shaking his head*"
+                k "So, any idea of how to get rid of... *looks at the student holding him*"
+                l "No, i dont."
+            "Juju":
+                k "Ugh, come on, Juju i will find you!"
+                scene demid with dissolve
+                "*You sighted Juju. She seems to be barely evading them. Thus you meow loudly at them*"
+                j "Thanks for the distraction! *manages to run away from the colleague looking on your direction*"
+                $ juju_rl += 1
+                j "They think calico is something insanely rare, but when theres literal nebelungs and york chocolates... yeah"
+                k "I am a nebelung? I mean, i didn't see a mirror yet..."
+                j "Yeah, a fluffy, quiet nebelung. And im what, a shorthair calico?"
+                k "I didn't study it much, you know? The cat knower is lynx, wherever he is."
+            "Artur":
+                k "Poor Artur, though maybe he will have fun with this."
+                scene demid_ext with dissolve
+                "*Someone is playing with Artur. As soon as he sights me, he lets a sigh of relief.*"
+                a "Katie, finally! It's not the best thing to be passed around like a fluffy ball!"
+                $ artur_rl += 1
+                k "Yeah, i see. Though it feels nice, from a distance obviously."
+                if pairing_a_j == True:
+                    k "Do you think Juju already ran away from those people at this type?"
+                    a "She's surely quick, i believe she is looong gone. "
+                    k "You look proud of her, huh."
+                    a "We must be proud of our friends!"
+                    k "I know, but... Hm... Guess you found a new liking other than chemistry."
+                    a "HEEEEY- \n*tries to get out to go at her, to no avail*"
+                k "Guess you will be there for a long time."
+                a "Noooooooooooo-"
+        
     return
