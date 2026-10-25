@@ -23,6 +23,7 @@ default ending = ""
 # artur is pure orange energy and we all know it
 # mila is a fluffy white cat
 # juju is a tricolor cat. cool af.
+# katie is a grey cat btw
 
 #we are all witnesses to a tragedy.
 #todo: write the act 3/4, and the endings. if bad = mila dies by a decorative lily, lynx follows her and eats the lily himself to join her,
@@ -640,15 +641,15 @@ label ch1:
     with Pause(3)
     hide text
 
-    show text "Act 3 - Across Our Starry Night" with dissolve
+    show text "Act 3 - Across Our Lovely Reverie" with dissolve
     with Pause(3)
 
-    $ discord.update(state="Investigating this chaos...", details="Act 3/4 - Across Our Starry Night")
     hide text
 
     menu:
         "Who do i search..."
             "Mila":
+                $ discord.update(state="Chasing a benevolent angel...", details="Act 3/4 - Across Our Lovely Reverie")
                 k "I think that girl was from a close department. I will just follow her..."
                 scene ce_lounge with dissolve
                 m "Mhm."
@@ -657,7 +658,13 @@ label ch1:
                 k "Yeah, you seem to be happy huh."
                 $ mila_rl += 1
                 m "I am, but even so id rather be with the rest of you."
+                k "I see, thank you i guesss?"
+                m "So much to wonder. Can i stay here?"
+                k "Can you even leave, actually?"
+                "*Mila tries to move, but to no avail*"
+                k "Eh. Guess we gotta wait. I don't know the time but i guess soon they will need to go to their class and leave you here."
             "Lynx":
+                $ discord.update(state="Chasing a hopeful soul...", details="Act 3/4 - Across Our Lovely Reverie")
                 k "I know that guy, let me follow him now!"
                 scene ru_ext with dissolve
                 l "I swear people used to say black cats are a bad omen. So why did they also pick me!"
@@ -669,17 +676,34 @@ label ch1:
                     l "*blushes, or would if his cat form allowed him* \nI... COME ON KATIE! \n*Sighs, though shaking his head*"
                 k "So, any idea of how to get rid of... *looks at the student holding him*"
                 l "No, i dont."
+                "*A minute or two later, a bus passes, and the student leaves him to go on the bus*"
+                l "Finally. I crave the warmth of someone, not theirs though."
+                l "I wonder, though. One of they had a cross. I was taught that cats don't go to heaven, because no soul."
+                "You listen intently."
+                l "Does that mean we are condemned out of heaven just because we became this, no matter what our actions were?"
+                k "Woah, so deep thoughts outta nowhere."
+                l "I know, but, like, does a god so lovingly to make many creations decides to throw those who cannot worship him?"
+                l "Why? Does the fact we became something other than what he set us as makes us a instant sin meant to be erased?"
+                k "I didn't become a cat just to be still reflecting on religious things, please!"
+                l "And now that i think, it's not only about cats that this applies to."
+                k "What matters is not what form you have been given, only the form you see yourself as, the one you truly are."
+                $ lynx_rl += 1
+                l "Thanks...?"
             "Juju":
+                $ discord.update(state="Chasing a lovely dream...", details="Act 3/4 - Across Our Lovely Reverie")
                 k "Ugh, come on, Juju i will find you!"
                 scene demid with dissolve
                 "*You sighted Juju. She seems to be barely evading them. Thus you meow loudly at them*"
-                j "Thanks for the distraction! *manages to run away from the colleague looking on your direction*"
+                j "Thanks for the distraction! *manages to run away from the colleague looking on your direction*" with hpunch
                 $ juju_rl += 1
                 j "They think calico is something insanely rare, but when theres literal nebelungs and york chocolates... yeah"
                 k "I am a nebelung? I mean, i didn't see a mirror yet..."
                 j "Yeah, a fluffy, quiet nebelung. And im what, a shorthair calico?"
                 k "I didn't study it much, you know? The cat knower is lynx, wherever he is."
+                j "Hey, we are fine! Don't worry, we can just find the rest now i guess!"
+                k "Yeah, any ideas though?"
             "Artur":
+                $ discord.update(state="Chasing a chaotic memory...", details="Act 3/4 - Across Our Lovely Reverie")
                 k "Poor Artur, though maybe he will have fun with this."
                 scene demid_ext with dissolve
                 "*Someone is playing with Artur. As soon as he sights me, he lets a sigh of relief.*"
