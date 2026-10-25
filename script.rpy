@@ -29,6 +29,10 @@ default ending = ""
 #todo: write the act 3/4, and the endings. if bad = mila dies by a decorative lily, lynx follows her and eats the lily himself to join her,
 #Artur loses it and sets lotta flowers on fire and accepts it, and Juju sees it and runs into the fire joining him, while Katie becomes a witness
 #At last, Katie gets her expulsion revoked, thus waking up the other day as a normal person, but with all the memories of the chaos.
+#i wont finish this in time, but if katie or everyone survives and gets expulsion revoked, katie and the rest wakes up to discover there was a coup
+#like a literal coup. this is a prophecy i dont want to become real. may we jinx this even if it means voting 13.
+#btw lore wise every cat here is left leaning, and katie got expelled for it. but she comes back and voila, far-right won and its chaos everywhere
+#and if we do acd2, its basically them during a coup in brazil, days later afte elections on which flavio won.
 
 #act 1 = yay food, act 2 is lore dumping, act 3 is separation and act 4 is finale or tragedy.
 
