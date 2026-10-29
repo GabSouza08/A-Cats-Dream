@@ -1,5 +1,4 @@
 ﻿default lily = False
-default pity_katie = False
 default lynx_event = False
 default mila_event = False
 default juju_event = False
@@ -11,12 +10,17 @@ default nuzzlev2 = ""
 default artur_rl = 0
 default lynx_rl = 0
 default mila_rl = 0
+default mila_rl_lynx = 0
 default juju_rl = 0
 default hunger_lv = 0
+default lynx_pov = False
 default pairing_m_l = False
 default pairing_a_j = False
 default pairing_k = ""
 default ending = ""
+
+init python:
+    import random
 
 
 # lynx is a black cat
@@ -29,11 +33,7 @@ default ending = ""
 #todo: write the act 3/4, and the endings. if bad = mila dies by a decorative lily, lynx follows her and eats the lily himself to join her,
 #Artur loses it and sets lotta flowers on fire and accepts it, and Juju sees it and runs into the fire joining him, while Katie becomes a witness
 #At last, Katie gets her expulsion revoked, thus waking up the other day as a normal person, but with all the memories of the chaos.
-#i wont finish this in time, but if katie or everyone survives and gets expulsion revoked, katie and the rest wakes up to discover there was a coup
-#like a literal coup. this is a prophecy i dont want to become real. may we jinx this even if it means voting 13.
-#btw lore wise every cat here is left leaning, and katie got expelled for it. but she comes back and voila, far-right won and its chaos everywhere
-#and if we do acd2, its basically them during a coup in brazil, days later afte elections on which flavio won.
-
+#also if its on the good ending, she immediately goes and gets the necessary things to contest the others expulsions, and they get revoked too.
 #act 1 = yay food, act 2 is lore dumping, act 3 is separation and act 4 is finale or tragedy.
 
 define cm = Character("Classmate")
@@ -59,23 +59,26 @@ define text_pool = [
     "Forgive me Mila, for i had a dream.",
     "Bleh.",
     "Vae victis fortunarum!",
-    "Oh luna, audi preces meas...",
+    "O luna, audi preces meas...",
     "This game is a banger, we lost 4 cats and a girl for it.",
     "Don't forget, i'm with you in the dark.",
     "We don't know no more aaaaa...?",
     "Without beginning or end, the world cycles upon the infinite.",
     "I have never hurt a fly, but i have got walls to climb!",
     "Tested on Linux, on a Google TV and on a Hackintosh. Those cats truly are lost, huh",
-    "Quo vadis pater?"
+    "Quo vadis pater?",
+    "This is not a rereading of 2023 events",
+    "This is also not a rereading of 2026 events",
+    "Hopefully this is also not a prophecy"
 ]
 
 
 # TODO
 # get some cat pics/assets
-# find MORE pics of things at university
+# find EVEN MORE pics of things at university
 # more ao3 poems because yeah
-# turn college kittens or a cats dream into a ao3 fandom
-# finish chapter 1 aka prologue
+# turn a cats dream into a ao3 fandom
+# finish act 3
 # add per cat relationship level
 
 label splashscreen:
@@ -94,32 +97,22 @@ label splashscreen:
 
     $ lc_text = renpy.random.choice(text_pool)
 
-    # 3. Exibimos a frase sorteada na tela
     show text "[lc_text]" with dissolve
     with Pause(3)
 
     hide text
 
-
-label start:
-
     scene cchla_ext
 
     cm "Do you think, that maybe, there is a way out of this?"
 
-    k "I think it does. But, am I truly the one meant to be answering this?"
+    k "I think it does. But, am I truly the one meant to be answering it?"
 
     k "Do you take pity on me, just because i am another person soon to be expelled?"
 
-    menu:
-        k "Do you, sir?"
-        "I do not, because you deserved it, at the very end.":
-            jump hardmode
-        "I do, after all, we all are in this together.":
-            $ pity_katie = True
-            jump easymode
-
-label hardmode:
+    k "Do you, sir?"
+    
+    cm "I do not, because you deserved it, at the very end."
 
     k "So, tell me. What is the purpose of such thing? Just to say your concept of justice is better than ours?"
     
@@ -127,19 +120,13 @@ label hardmode:
 
     k "You are a traitor. A liar. And all... For what?"
 
-    jump ch1
-
-label easymode:
-    
-    k "I see. Then, at least at the very end you will give us a chance."
-
-    k "Even if deep down, this is not the redemption we all hoped for."
-
     cm "So, its official. Love it, hate it, you are now free. For what, though? So, let it be."
 
-    jump ch1
+    return
 
-label ch1:
+
+label start:
+    jump a_dreamy_requiem #temporary testing
 
     scene black with dissolve
     with Pause(1)
@@ -195,7 +182,7 @@ label ch1:
     scene black with dissolve
     with Pause(1)
 
-    if pity_katie:
+    if a_free_soul == False:
         show text "The flowers slowly bloom once more."
         with Pause(3)
     else:
@@ -209,8 +196,6 @@ label ch1:
     "Huh? another cat? Though your appearance reignites a memory in me i seem to have forgotten..."
 
     k "{cps=14}Hello? \nhello?? \nWho are you? \nHi?{/cps}"
-
-    # play music "audio/in_caeli_fatuus.ogg"
 
     "Well, i am myself!"
 
@@ -635,7 +620,7 @@ label ch1:
 
     a "Hey, let me go!"
 
-    "*some other people also grab mila and juju, and also lynx, leaving you, katie, alone.*"
+    "*some other people also grab mila and juju, and before you know, also lynx. Leaving you, Katie, alone.*"
 
     k "Oh damn it. Ugh, those pesky people. I will find you."
 
@@ -651,7 +636,7 @@ label ch1:
     hide text
 
     menu:
-        "Who do i search..."
+            "Who do i search..."
             "Mila":
                 $ discord.update(state="Chasing a benevolent angel...", details="Act 3/4 - Across Our Lovely Reverie")
                 k "I think that girl was from a close department. I will just follow her..."
@@ -677,7 +662,7 @@ label ch1:
                 if pairing_m_l == True:
                     l "Mila is more fluffy!"
                     k "Oh, the king can't spend a moment without talking about the queen."
-                    l "*blushes, or would if his cat form allowed him* \nI... COME ON KATIE! \n*Sighs, though shaking his head*"
+                    l "*blusheyour thought on this as is and songs it reminds you of, and why?s, or would if his cat form allowed him* \nI... COME ON KATIE! \n*Sighs, though shaking his head*"
                 k "So, any idea of how to get rid of... *looks at the student holding him*"
                 l "No, i dont."
                 "*A minute or two later, a bus passes, and the student leaves him to go on the bus*"
@@ -725,3 +710,285 @@ label ch1:
                 a "Noooooooooooo-"
         
     return
+
+
+label at_worlds_end:
+
+    scene black with dissolve 
+    with Pause(2)
+    
+    show text "Without love or hope, the Angel stands at the World's Edge"
+    with Pause(3)
+    hide text
+
+    show text "At heaven's gate, we stand alone, as our pleas, inevitably, go unheard."
+    with Pause(3)
+    hide text
+
+    l "Artur, Mate. Eh, my heart fails to comprehend why did you do this. Ah, my time is ticking down."
+
+    l "A hope like ours won't help me now."
+
+    a "So go on and fight me, that's what you do best."
+
+    a "I preferred when your codename was 'Lunaria Umbrosa', after all, you always hide beneath the moon."
+
+    l "Says the 'Corona Vana', and 'his' fallen partner, 'Musa Mortua'."
+
+    $ lynx_hp = 10
+    $ artur_hp = 10
+    $ incoming_damage = 0
+    $ lynx_warned_75 = False
+    $ lynx_warned_40 = False
+    $ lynx_warned_10 = False
+    $ artur_warned_75 = False
+    $ artur_warned_40 = False
+    $ artur_warned_10 = False
+    while lynx_hp > 0 and artur_hp > 0:
+        "Lynx: [lynx_hp]/10. Artur: [artur_hp]/10."
+
+        menu:
+            "Strike":
+                $ artur_hp = max(0, artur_hp - 2)
+                $ incoming_damage = 2
+                "You try to strike upon him."
+
+            "Brace":
+                $ incoming_damage = 1
+                "You brace for what fate will throw next."
+
+            "Speak":
+                $ incoming_damage = 1
+                l "Why did you do this??"
+                a "Stop talking and fight!"
+
+        if artur_hp > 0:
+            $ lynx_hp = max(0, lynx_hp - incoming_damage)
+            "Artur moves before you can react."
+
+        if artur_hp <= 7 and not artur_warned_75:
+            $ artur_warned_75 = True
+            a "What are you doing, 'Lynx'? Just me, and you, for what?"
+        if artur_hp <= 4 and not artur_warned_40:
+            $ artur_warned_40 = True
+            a "No! You were meant to be a friend! Why?"
+        if artur_hp <= 1 and not artur_warned_10:
+            $ artur_warned_10 = True
+            a "You hide in the shadows of your sins... You... You know #@*% doesn't care, right?"
+
+        if lynx_hp <= 7 and not lynx_warned_75:
+            $ lynx_warned_75 = True
+            l "So, have you found someone to fight for yet?"
+        if lynx_hp <= 4 and not lynx_warned_40:
+            $ lynx_warned_40 = True
+            l "Join me in our last dance!"
+        if lynx_hp <= 1 and not lynx_warned_10:
+            $ lynx_warned_10 = True
+            l "Forgive me, ,{+*, for i had a dream."
+
+    if lynx_hp <= 0:
+        a "An Jack becomes a King. Whoever is dealing the cards today... Ugh."
+    else:
+        l "What's the purpose of this 'Corona Vana'? The Jack always fall to a King."
+
+    $ lynx_event = True
+
+    return
+
+label a_dreamy_requiem:
+    $ lynx_pov = True
+
+    "You feel a weird feeling."
+
+    "You see Mila with a flower."
+
+    "Is that a lily?"
+
+    scene cg1
+
+    l "Mila, NO!"
+
+    "But it was too late."
+
+    l "Mila, SPIT IT, SPIT-"
+
+    m "Why?"
+
+    l "Didn't you read my message that day?? ITS TOXIC, GET IT OUT!"
+
+    "*Mila rushes to spit it out*"
+
+    l "Okay, uh, come on, its.... Its letal!"
+
+    l "I dont think anyone can hear us."
+
+    $ mila_event = True
+
+    m "I want to believe this is...."
+
+    l "Keep believing, then! Why didnt you heed my warning!"
+
+    m "{cps=28}I....{/cps}"
+
+    m "{cps=26}I don't know... G- Lynx.{/cps}"
+    $ mila_rl_lynx = 0
+
+    m "{cps=24}It just... just seemed nice. And pretty.{/cps}"
+    $ mila_rl_lynx = 1
+
+    m "{cps=22}I was walking and some student put it on my head..{/cps}"
+    $ mila_rl_lynx = 2
+
+    m "{cps=20}And gosh, i looked pretty.{/cps}"
+    $ mila_rl_lynx = 4
+
+    m "{cps=18}For once... i understand why did you say i made you feel alive.{/cps}"
+    $ mila_rl_lynx = 6
+
+    m "{cps=16}But it's ironic, isn't it?{/cps}"
+    $ mila_rl_lynx = 8
+
+    m "{cps=14}On the end... I am just... #my. Just another...{/cps}"
+    $ mila_rl_lynx = 10
+
+    l "Stop! You're... Come on, "
+
+    m "{cps=12}This is so quick. Am i such a fragile doll?{/cps}"
+    $ mila_rl_lynx = 20
+
+    "You nuzzle into her. Desperately."
+    $ mila_rl_lynx = 30
+
+    m "{cps=10}No, i cant, dont give up..{/cps}"
+    $ mila_rl_lynx = 40
+
+    m "{cps=9}Despite everything, you still remain here. You're so stubborn, Lynx. Hehe. I always loved this about you.{/cps}"
+    $ mila_rl_lynx = 50
+    
+    m "{cps=8}I didn't realize who it was at first...{/cps}"
+    $ mila_rl_lynx = 60
+
+    m "{cps=7}But deep down...{/cps}"
+    $ mila_rl_lynx = 70
+
+    m "{cps=6}As you said...{/cps}"
+    $ mila_rl_lynx = 80
+
+    m "{cps=5}You'd always find me.{/cps}"
+    $ mila_rl_lynx = 100
+
+    "You are tearing your mind apart, as you keep on trying to ground yourself in her."
+    $ mila_rl_lynx = 200
+
+    "You don't care about your omission, her errors, on the end..."
+    $ mila_rl_lynx = 300
+
+    "You just have a single question."
+    $ mila_rl_lynx = 400
+
+    l "May I Love Again? MILA?"
+    $ mila_rl_lynx = 500
+
+    m "{cps=4}So... stubborn...{/cps}"
+    $ mila_rl_lynx = 1000
+
+    m "{cps=3}But...{/cps}"
+    $ mila_rl_lynx = 2000
+
+    m "{cps=2}Just like they said..{/cps}"
+    $ mila_rl_lynx = 3000
+
+    m "{cps=1}I..{/cps}"
+    $ mila_rl_lynx = 4000
+
+    m "{cps=1}...love...{/cps}"
+    $ mila_rl_lynx = 5000
+
+    m "{cps=1}...you.{/cps}"
+    $ mila_rl_lynx = 9999
+
+    "And then, there was none."
+
+    menu optional_name:
+        "You see the lily by her side."
+        "Eat the lily.":
+            jump heaven
+        "Eat the lily.":
+            jump heaven
+        "Eat the lily.":
+            jump heaven
+        "Eat the lily.":
+            jump heaven
+        "Eat the lily.":
+            jump heaven
+        "Eat the lily.":
+            jump heaven
+        "Eat the lily.":
+            jump heaven
+        "Eat the lily.":
+            jump heaven
+        "Eat the lily.":
+            jump heaven
+        "Eat the lily.":
+            jump heaven
+        "Abandon her":
+            pass
+
+    l "I... i.... aaaah!"
+
+    "You run away."
+
+label heaven:
+
+    scene black with dissolve 
+    with Pause(2)
+    
+    show text "In your heaven, I rest."
+    with Pause(3)
+    hide text with dissolve
+
+    show text "In your heaven, I SHALL rest..."
+    with Pause(3)
+    hide text with dissolve
+    
+    show text "Act 749189472148 C&*#PLETE"
+    with Pause(3)
+    hide text with dissolve
+    $ discord.update(state="Dead.", details="???????")
+
+    show text "Act ???? - a!Ç^)_."
+    $ renpy.force_autosave()
+    with Pause(3)
+    hide text with dissolve
+
+    jump love
+
+
+label love:
+    $ fate_roll = random.SystemRandom().randint(1, 20)
+    "The die lands on [fate_roll]."
+
+    if fate_roll == 1:
+        python:
+            raise RuntimeError("Could not find a continuation for label 'love'.")
+
+    $ can_leave = fate_roll >= 11
+    call screen love_traceback(fate_roll, can_leave)
+
+    if _return == "follow_artur":
+        jump love_follow_artur
+    elif _return == "follow_juju":
+        jump love_follow_juju
+
+    return
+
+
+label love_follow_artur:
+    $ lynx_pov = False
+    "POV changed to Artur."
+    return
+
+
+label love_follow_juju:
+    $ lynx_pov = False
+    "POV changed to Juju"

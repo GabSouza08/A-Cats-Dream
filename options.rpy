@@ -32,9 +32,10 @@ define config.version = "0.3"
 define gui.about = _p("""
 A game created during the Digital Games course.\n
 Made originally as a board game, turned digital as a VN.\n
-Special thanks to Mikael and Luiza, for giving me the final push to start making this game.\n
-And thanks for Izaquiel for playtesting this.\n
-Now featuring Discord RPC!
+Special thanks to Izaquiel, for giving me the final push to start making this game.\n
+And also for playtesting this.... Right?\n
+Now featuring Discord RPC and some extras.\n
+Check this cool playlist i did for the game as an ust btw! https://open.spotify.com/playlist/66063NghQqQpDB4k3foWWD
 """)
 
 

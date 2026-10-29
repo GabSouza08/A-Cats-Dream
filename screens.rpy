@@ -254,6 +254,102 @@ screen quick_menu():
             textbutton _("Q.Save") action QuickSave()
             textbutton _("Q.Load") action QuickLoad()
             textbutton _("Prefs") action ShowMenu('preferences')
+            textbutton _("Status") action Show("status_screen")
+
+
+screen status_screen():
+    modal True
+    zorder 200
+
+    key "game_menu" action Hide("status_screen")
+
+    frame:
+        xalign 0.5
+        yalign 0.5
+        padding (32, 24)
+
+        vbox:
+            spacing 12
+
+            text _("Status") size 36
+            text _("Hunger: [hunger_lv]")
+            null height 8
+            text _("Relationships") size 28
+            if lynx_pov:
+                text _("Mila: [mila_rl_lynx]")
+            else:
+                text _("Mila: [mila_rl]")
+            text _("Artur: [artur_rl]")
+            text _("Juju: [juju_rl]")
+            text _("Lynx: [lynx_rl]")
+            textbutton _("Close") action Hide("status_screen") xalign 1.0
+
+
+screen love_traceback(fate_roll, can_leave):
+    modal True
+    zorder 1090
+
+    frame:
+        style_group ""
+
+        has side "t c b":
+            spacing gui._scale(10)
+
+        side "c r":
+            xfill True
+            label _("An exception has occurred.") text_size gui._scale(40)
+            text "{size=-3}[config.version!q]\n[renpy.version_only!q]\n[renpy.platform!q]{/size}":
+                textalign 1.0
+                yalign 0.5
+
+        viewport:
+            id "love_traceback_viewport"
+            child_size (None, None)
+            mousewheel True
+            draggable True
+            scrollbars "both"
+
+            has vbox
+
+            text "No valid destination found for this soul." size gui._scale(22)
+            frame:
+                style "_trace"
+                text "Traceback (most recent call last):\n  File \"game/script.rpy\", in label heaven\n    jump love\nRoll: [fate_roll]\nException: No route to the departed was found."
+
+            text "Full traceback:" size gui._scale(22)
+            frame:
+                style "_trace"
+                text "The story reached the place where love should have been.\nNo continuation was found." substitute False
+
+            text _("Follow someone?") size gui._scale(22)
+            hbox:
+                spacing gui._scale(12)
+
+                textbutton _("Follow Artur"):
+                    action Return("follow_artur")
+                    sensitive can_leave
+
+                textbutton _("Follow Juju"):
+                    action Return("follow_juju")
+                    sensitive can_leave
+
+                textbutton "{s}Follow Mila{/s}":
+                    action NullAction()
+                    sensitive False
+
+                textbutton "{s}Follow Lynx{/s}":
+                    action NullAction()
+                    sensitive False
+
+        hbox:
+            spacing gui._scale(25)
+
+            textbutton _("Rollback"):
+                action Rollback()
+
+            textbutton _("Quit"):
+                action Quit(confirm=False)
+                xalign 1.0
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -1534,6 +1630,7 @@ screen quick_menu():
             textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
             textbutton _("Menu") action ShowMenu()
+            textbutton _("Status") action Show("status_screen")
 
 
 style window:
