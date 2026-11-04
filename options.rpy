@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "0.3"
+define config.version = "0.4"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -53,7 +53,7 @@ define build.name = "ACatsDream"
 ## appropriate mixer.
 
 define config.has_sound = False
-define config.has_music = False
+define config.has_music = True
 define config.has_voice = False
 
 
@@ -128,11 +128,13 @@ define config.window_hide_transition = Dissolve(.2)
 
 default preferences.text_cps = 30
 
+default preferences.music_volume = 0.0
+
 
 ## The default auto-forward delay. Larger numbers lead to longer waits, with 0
 ## to 30 being the valid range.
 
-default preferences.afm_time = 15
+default preferences.afm_time = 10
 
 
 ## Save directory ##############################################################

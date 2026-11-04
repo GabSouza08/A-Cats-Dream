@@ -19,15 +19,13 @@ default pairing_a_j = False
 default pairing_k = ""
 default ending = ""
 
-init python:
-    import random
-
-
 # lynx is a black cat
 # artur is pure orange energy and we all know it
 # mila is a fluffy white cat
 # juju is a tricolor cat. cool af.
 # katie is a grey cat btw
+
+#ReCasted mod could also change chars names but idk
 
 #we are all witnesses to a tragedy.
 #todo: write the act 3/4, and the endings. if bad = mila dies by a decorative lily, lynx follows her and eats the lily himself to join her,
@@ -36,14 +34,14 @@ init python:
 #also if its on the good ending, she immediately goes and gets the necessary things to contest the others expulsions, and they get revoked too.
 #act 1 = yay food, act 2 is lore dumping, act 3 is separation and act 4 is finale or tragedy.
 
-define cm = Character("Classmate")
+define cm = Character(_("Classmate"))
 define k = Character("Katie", color="5D6161")
 define m = Character("Mila", color="FFFFFF")
 define j = Character("Juju", color="FFDD8C")
 define a = Character("Artur", color="FFAE00")
 define l = Character("Lynx", color="525252")
 define m_a = Character("Mila & Artur", color="FFFFFF")
-define evr = Character("Everyone")
+define evr = Character(_("Everyone"))
 
 define text_pool = [
     "Fight for what you believe in, okay?",
@@ -72,6 +70,33 @@ define text_pool = [
     "Hopefully this is also not a prophecy"
 ]
 
+define text_pool_pt = [
+    "Lute pelo que você acredita, tudo bem?",
+    "E nós achávamos que poderíamos mudar o destino.",
+    "Escárnio contra o céu; foi isso que nos tornamos?",
+    "Então, não restou ninguém.",
+    "Então, já encontrou uma razão para lutar?",
+    "Somos todos escravos da história. Mesmo depois de tudo...",
+    "Todo sonho que tivemos jamais poderia salvar você.",
+    "Katie, Katie, consegue ouvir meu apelo?",
+    "Artur é mais rápido que Juju. - Artur",
+    "All the things she said, running through my head...",
+    "Me perdoe, Mila, por eu ter sonhado.",
+    "Bleh.",
+    "Vae victis fortunarum!",
+    "O luna, audi preces meas...",
+    "Este jogo é bom demais; perdemos quatro gatos e uma garota por causa dele.",
+    "Não se esqueça: estou com você no escuro.",
+    "A gente já não sabe mais aaaaa...?",
+    "Sem começo nem fim, o mundo gira no infinito.",
+    "I have never hurt a fly, but i have got walls to climb!",
+    "Testado no Linux, numa Google TV e num Hackintosh. Esses gatos estão mesmo perdidos, hein?",
+    "Quo vadis pater?",
+    "Esta não é uma releitura dos acontecimentos de 2023.",
+    "Esta também não é uma releitura dos acontecimentos de 2026.",
+    "Tomara que isto também não seja uma profecia."
+]
+
 
 # TODO
 # get some cat pics/assets
@@ -85,17 +110,30 @@ label splashscreen:
 
     scene black with dissolve
 
-    show text "A Cat's Dream shall never die." with dissolve
+    show text _("A Cat's Dream shall never die.") with dissolve
     with Pause(3)
 
     hide text
 
-    show text "Prototype in Development Phase." with dissolve
+    show text _("Prototype in indev version. no arts and song available. Be wary.") with dissolve
     with Pause(3)
 
     hide text
 
-    $ lc_text = renpy.random.choice(text_pool)
+    menu:
+        "Choose a language / Escolha o idioma."
+        "English":
+            $ renpy.change_language(None)
+            $ content_warning = "CONTENT WARNING: \nAcademic expulsion and political unrest; \nsocial rejection, isolation, and emotional distress; \ntransformation; coercive capture; poisoning and toxic plants; death and suicidal themes; \nfire and arson; physical confrontation; grief, panic, and religious doubt; animals in danger; and a sudden error screen."
+            $ lc_text = renpy.random.choice(text_pool)
+        "Português":
+            $ renpy.change_language("portuguese")
+            $ content_warning = "AVISO DE CONTEÚDO: \nJubilamento e conflito político; rejeição social, isolamento e sofrimento emocional; \ntransformação; captura coercitiva; envenenamento e plantas tóxicas; morte e temas de suicídio; \nfogo e incêndio criminoso; confronto físico; luto, pânico e dúvidas religiosas; animais em perigo; e uma tela de erro repentina."
+            $ lc_text = renpy.random.choice(text_pool_pt)
+
+    show text "[content_warning]" with dissolve
+    with Pause(10)
+    hide text
 
     show text "[lc_text]" with dissolve
     with Pause(3)
@@ -126,12 +164,11 @@ label splashscreen:
 
 
 label start:
-    jump a_dreamy_requiem #temporary testing
 
     scene black with dissolve
     with Pause(1)
 
-    show text "Somewhere, in the outskirts of CCS..."
+    show text _("Somewhere, in the outskirts of CCS...")
     with Pause(3)
 
     scene ccs_ext with dissolve
@@ -144,10 +181,10 @@ label start:
     scene black
     with Pause(1)
 
-    show text "Act 1 - Scattered Angels" with dissolve
+    show text _("Act 1 - Scattered Angels") with dissolve
     with Pause(3)
 
-    show text "2 Hours later...." with dissolve
+    show text _("2 Hours later....") with dissolve
     with Pause(3)
 
     scene ccs_ext with dissolve
@@ -159,13 +196,13 @@ label start:
 
     k "{cps=60}I'm.... a cat?!?{/cps}"
 
-    $ discord.update(state="Expelled and now turned cat.", details="Act 1/4 - Scattered Angels")
+    $ discord.update(state=_("Expelled and now turned cat."), details=_("Act 1/4 - Scattered Angels"))
 
     k "Great. that is all i needed."
 
     "You walk aimlessly by the streets of the campus."
 
-    $ renpy.notify("You feel a little hungrier..")
+    $ renpy.notify(_("You feel a little hungrier.."))
     $ hunger_lv += 1
 
     scene demid_ext with dissolve
@@ -183,10 +220,10 @@ label start:
     with Pause(1)
 
     if a_free_soul == False:
-        show text "The flowers slowly bloom once more."
+        show text _("The flowers slowly bloom once more.")
         with Pause(3)
     else:
-        show text "The flowers wither once more."
+        show text _("The flowers wither once more.")
         with Pause(3)
 
     hide text
@@ -290,6 +327,7 @@ label start:
     k "I see.."
 
     k "Wait, is that girl putting food there? Wasn't it banned?"
+    $ hunger_lv += 1
 
     m "Yeah, silly, it was banned. They cannot feed the cats..."
 
@@ -329,7 +367,7 @@ label start:
                     j "Don't you, though?"
                     m "Yeah!"
                     j "So be happy for it!!"
-                    $ discord.update(state="Fangirling for Mila", details="Act 1/4 - Scattered Angels")
+                    $ discord.update(state=_("Fangirling for Mila"), details=_("Act 1/4 - Scattered Angels"))
                 "Nuzzle by Artur's side":
                     $ artur_rl += 1
                     $ nuzzlev2 = "Artur"
@@ -337,21 +375,21 @@ label start:
                     l "Theres no cat army!"
                     a "Now there is!"
                     l "Fair."
-                    $ discord.update(state="Rejoicing with Artur", details="Act 1/4 - Scattered Angels")
+                    $ discord.update(state=_("Rejoicing with Artur"), details=_("Act 1/4 - Scattered Angels"))
                 "Nuzzle by Lynx's side":
                     $ lynx_rl += 1
                     $ nuzzlev2 = "Lynx"
                     l "I love this, i cant lie. I crave the warmth of-"
                     j "Ohhh, finally something breaks the mask?"
                     l "Ugh. I can feel, okay?"
-                    $ discord.update(state="Feeling loved with Lynx", details="Act 1/4 - Scattered Angels")
+                    $ discord.update(state=_("Feeling loved with Lynx"), details=_("Act 1/4 - Scattered Angels"))
                 "Nuzzle by Juju's side":
                     $ juju_rl += 1
                     $ nuzzlev2 = "Juju"
                     j "*unintelligible noises*"
                     j "*more unintelligible noises*"
                     a "And i am the most chaotic here."
-                    $ discord.update(state="Embracing the chaos of Juju", details="Act 1/4 - Scattered Angels")
+                    $ discord.update(state=_("Embracing the chaos of Juju"), details=_("Act 1/4 - Scattered Angels"))
 
             
             "You feel a bit closer to them now."
@@ -364,7 +402,7 @@ label start:
     
     scene black with dissolve
 
-    show text "Some hours later..."
+    show text _("Some hours later...")
     with Pause(3)
 
     scene ru with dissolve
@@ -447,19 +485,20 @@ label start:
 
     scene black with dissolve
 
-    show text "Act 1 Finished." with dissolve
+    show text _("Act 1 Finished.") with dissolve
     with Pause(3)
     hide text
 
-    show text "Act 2 - Ruptures Across Memories" with dissolve
+    show text _("Act 2 - Ruptures Across Memories") with dissolve
     with Pause(3)
 
-    $ discord.update(state="Investigating this chaos...", details="Act 2/4 - Ruptures Across Memories")
+    $ discord.update(state=_("Investigating this chaos..."), details=_("Act 2/4 - Ruptures Across Memories"))
     hide text
 
     scene cchla_ext with fade
 
     a "Soooo..."
+    $ hunger_lv += 1
 
     m "Just say already what you want, Artur!"
 
@@ -502,7 +541,7 @@ label start:
             l "It will be all be fine."
             $ pairing_m_l = True
             $ lynx_rl += 1
-            $ discord.update(state="Being a winglady to Lynx", details="Act 2/4 - Ruptures Across Memories")
+            $ discord.update(state=_("Being a winglady to Lynx"), details=_("Act 2/4 - Ruptures Across Memories"))
 
         "Try to comfort her":
             $ mila_rl += 1
@@ -542,11 +581,12 @@ label start:
     "*Mila runs behind them. And so does Lynx*"
 
     k "Wait for me!"
+    $ hunger_lv += 1
 
     scene black with dissolve 
     with Pause(2)
     
-    show text "A few minutes later, somewhere else..."
+    show text _("A few minutes later, somewhere else...")
     with Pause(3)
     
     hide text
@@ -590,6 +630,7 @@ label start:
     j "But, some things happened, and, of course i tried to run away!"
 
     j "Sadly or not, i broke some things on the way and the college rep was destroyed."
+    $ hunger_lv += 1
 
     a "..."
 
@@ -604,6 +645,7 @@ label start:
         "*pssst* Artur, nudge on her!":
             a "Sure, seems a better idea!"
             $ pairing_a_j = True
+            $ discord.update(state=_("Being a winglady to Artur"), details=_("Act 2/4 - Ruptures Across Memories"))
         "Wait...":
             pass
         
@@ -620,25 +662,34 @@ label start:
 
     a "Hey, let me go!"
 
-    "*some other people also grab mila and juju, and before you know, also lynx. Leaving you, Katie, alone.*"
+    k "And there he goes...."
+
+    "*some other people also grab mila*"
+
+    k "Seriously?"
+
+    "*Someone grabs Juju, and as you turn back... Lynx is already by someone arms. And you know you will be next.*"
 
     k "Oh damn it. Ugh, those pesky people. I will find you."
+    $ hunger_lv += 1
+
 
     scene black with dissolve
 
-    show text "Act 2 Finished." with dissolve
+    show text _("Act 2 Finished.") with dissolve
     with Pause(3)
     hide text
 
-    show text "Act 3 - Across Our Lovely Reverie" with dissolve
+    show text _("Act 3 - Across Our Lovely Reverie") with dissolve
     with Pause(3)
 
     hide text
 
-    menu:
+    menu before_storm:
             "Who do i search..."
             "Mila":
-                $ discord.update(state="Chasing a benevolent angel...", details="Act 3/4 - Across Our Lovely Reverie")
+                $ hunger_lv += 1
+                $ discord.update(state=_("Chasing a benevolent angel..."), details=_("Act 3/4 - Across Our Lovely Reverie"))
                 k "I think that girl was from a close department. I will just follow her..."
                 scene ce_lounge with dissolve
                 m "Mhm."
@@ -652,8 +703,20 @@ label start:
                 k "Can you even leave, actually?"
                 "*Mila tries to move, but to no avail*"
                 k "Eh. Guess we gotta wait. I don't know the time but i guess soon they will need to go to their class and leave you here."
+                m "I don't mind, actually. It's..."
+                "*They leave her to go for their class, after one last pat.*"
+                m "Meh!"
+                k "Hey, now we can find the rest!"
+                m "Yeah. They also spoke something about a flower festival, so i'm sure we are gonna see many people coming."
+                k "So let's just go with it."
+                k "Any ideas of where anyone may be?"
+                m "Hm... No, actually."
+                k "....What? Then how we are going to-"
+                m "Let's just walk around, okay!"
+                $ hunger_lv += 1
             "Lynx":
-                $ discord.update(state="Chasing a hopeful soul...", details="Act 3/4 - Across Our Lovely Reverie")
+                $ hunger_lv += 1
+                $ discord.update(state=_("Chasing a hopeful soul..."), details=_("Act 3/4 - Across Our Lovely Reverie"))
                 k "I know that guy, let me follow him now!"
                 scene ru_ext with dissolve
                 l "I swear people used to say black cats are a bad omen. So why did they also pick me!"
@@ -678,8 +741,10 @@ label start:
                 k "What matters is not what form you have been given, only the form you see yourself as, the one you truly are."
                 $ lynx_rl += 1
                 l "Thanks...?"
+                $ hunger_lv += 1
             "Juju":
-                $ discord.update(state="Chasing a lovely dream...", details="Act 3/4 - Across Our Lovely Reverie")
+                $ hunger_lv += 1
+                $ discord.update(state=_("Chasing a lovely dream..."), details=_("Act 3/4 - Across Our Lovely Reverie"))
                 k "Ugh, come on, Juju i will find you!"
                 scene demid with dissolve
                 "*You sighted Juju. She seems to be barely evading them. Thus you meow loudly at them*"
@@ -691,8 +756,10 @@ label start:
                 k "I didn't study it much, you know? The cat knower is lynx, wherever he is."
                 j "Hey, we are fine! Don't worry, we can just find the rest now i guess!"
                 k "Yeah, any ideas though?"
+                $ hunger_lv += 1
             "Artur":
-                $ discord.update(state="Chasing a chaotic memory...", details="Act 3/4 - Across Our Lovely Reverie")
+                $ hunger_lv += 1
+                $ discord.update(state=_("Chasing a chaotic memory..."), details=_("Act 3/4 - Across Our Lovely Reverie"))
                 k "Poor Artur, though maybe he will have fun with this."
                 scene demid_ext with dissolve
                 "*Someone is playing with Artur. As soon as he sights me, he lets a sigh of relief.*"
@@ -708,32 +775,40 @@ label start:
                     a "HEEEEY- \n*tries to get out to go at her, to no avail*"
                 k "Guess you will be there for a long time."
                 a "Noooooooooooo-"
+                k "Come on, it will be fine, i am here."
+                $ hunger_lv += 1
+
+    if _preferences.language == "portuguese":
+        "O Ato 3 está incompleto. O que vem a seguir contém spoilers do final ruim."
+    else:
+        "Act 3 is incomplete. What follows contains spoilers for the bad ending."
+
         
-    return
-
-
 label at_worlds_end:
 
     scene black with dissolve 
     with Pause(2)
     
-    show text "Without love or hope, the Angel stands at the World's Edge"
+    show text _("Without love or hope, the Angel stands at the World's Edge")
     with Pause(3)
     hide text
 
-    show text "At heaven's gate, we stand alone, as our pleas, inevitably, go unheard."
+    show text _("At heaven's gate, we stand alone, as our pleas, inevitably, go unheard.")
     with Pause(3)
     hide text
 
-    l "Artur, Mate. Eh, my heart fails to comprehend why did you do this. Ah, my time is ticking down."
+    l "Artur, Mate. Eh, my heart fails to comprehend... Ah, my time is ticking down."
 
     l "A hope like ours won't help me now."
 
     a "So go on and fight me, that's what you do best."
 
-    a "I preferred when your codename was 'Lunaria Umbrosa', after all, you always hide beneath the moon."
+    a "I preferred when you didnt have a name. after all, you always hide..."
 
-    l "Says the 'Corona Vana', and 'his' fallen partner, 'Musa Mortua'."
+    l "Says the one who thinks everyone must bow to him."
+
+    scene cchla_end_corridor with Fade(0.5, 3.0, 2.5, color="#fff")
+    with Pause(3)
 
     $ lynx_hp = 10
     $ artur_hp = 10
@@ -774,7 +849,7 @@ label at_worlds_end:
             a "No! You were meant to be a friend! Why?"
         if artur_hp <= 1 and not artur_warned_10:
             $ artur_warned_10 = True
-            a "You hide in the shadows of your sins... You... You know #@*% doesn't care, right?"
+            a "You hide in the shadows of your sins... You... You know #### doesn't care, right?"
 
         if lynx_hp <= 7 and not lynx_warned_75:
             $ lynx_warned_75 = True
@@ -784,19 +859,23 @@ label at_worlds_end:
             l "Join me in our last dance!"
         if lynx_hp <= 1 and not lynx_warned_10:
             $ lynx_warned_10 = True
-            l "Forgive me, ,{+*, for i had a dream."
+            l "Forgive me, #### for i had a dream."
 
     if lynx_hp <= 0:
         a "An Jack becomes a King. Whoever is dealing the cards today... Ugh."
     else:
-        l "What's the purpose of this 'Corona Vana'? The Jack always fall to a King."
+        l "What's the purpose of this? The Jack always fall to a King."
 
     $ lynx_event = True
 
-    return
+    python:
+        raise RuntimeError("Sorry.")
 
 label a_dreamy_requiem:
+    
     $ lynx_pov = True
+
+    scene black with fade
 
     "You feel a weird feeling."
 
@@ -830,7 +909,7 @@ label a_dreamy_requiem:
 
     m "{cps=28}I....{/cps}"
 
-    m "{cps=26}I don't know... G- Lynx.{/cps}"
+    m "{cps=26}I don't know... L-Lynx.{/cps}"
     $ mila_rl_lynx = 0
 
     m "{cps=24}It just... just seemed nice. And pretty.{/cps}"
@@ -909,7 +988,7 @@ label a_dreamy_requiem:
 
     "And then, there was none."
 
-    menu optional_name:
+    menu musa_mortua:
         "You see the lily by her side."
         "Eat the lily.":
             jump heaven
@@ -943,20 +1022,20 @@ label heaven:
     scene black with dissolve 
     with Pause(2)
     
-    show text "In your heaven, I rest."
+    show text _("In your heaven, I rest.")
     with Pause(3)
     hide text with dissolve
 
-    show text "In your heaven, I SHALL rest..."
+    show text _("In your heaven, I SHALL rest...")
     with Pause(3)
     hide text with dissolve
     
-    show text "Act 749189472148 C&*#PLETE"
+    show text _("Act 749189472148 C&*#PLETE")
     with Pause(3)
     hide text with dissolve
-    $ discord.update(state="Dead.", details="???????")
+    $ discord.update(state=_("Dead."), details=_("???????"))
 
-    show text "Act ???? - a!Ç^)_."
+    show text _("Act ???? - a!Ç^)_.")
     $ renpy.force_autosave()
     with Pause(3)
     hide text with dissolve
@@ -965,30 +1044,6 @@ label heaven:
 
 
 label love:
-    $ fate_roll = random.SystemRandom().randint(1, 20)
-    "The die lands on [fate_roll]."
-
-    if fate_roll == 1:
-        python:
-            raise RuntimeError("Could not find a continuation for label 'love'.")
-
-    $ can_leave = fate_roll >= 11
-    call screen love_traceback(fate_roll, can_leave)
-
-    if _return == "follow_artur":
-        jump love_follow_artur
-    elif _return == "follow_juju":
-        jump love_follow_juju
-
+    python:
+        raise RuntimeError("Something bad happened, sorry for the inconvenience!")
     return
-
-
-label love_follow_artur:
-    $ lynx_pov = False
-    "POV changed to Artur."
-    return
-
-
-label love_follow_juju:
-    $ lynx_pov = False
-    "POV changed to Juju"

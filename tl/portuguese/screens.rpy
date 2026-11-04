@@ -4,333 +4,372 @@ translate portuguese strings:
 
     # game/screens.rpy:249
     old "Back"
-    new ""
+    new "Voltar"
 
     # game/screens.rpy:250
     old "History"
-    new ""
+    new "Histórico"
 
     # game/screens.rpy:251
     old "Skip"
-    new ""
+    new "Pular"
 
     # game/screens.rpy:252
     old "Auto"
-    new ""
+    new "Automático"
 
     # game/screens.rpy:253
     old "Save"
-    new ""
+    new "Salvar"
 
     # game/screens.rpy:254
     old "Q.Save"
-    new ""
+    new "Salv. ráp."
 
     # game/screens.rpy:255
     old "Q.Load"
-    new ""
+    new "Car. ráp."
 
     # game/screens.rpy:256
     old "Prefs"
-    new ""
+    new "Opções"
 
     # game/screens.rpy:302
     old "Start"
-    new ""
+    new "Iniciar"
 
     # game/screens.rpy:310
     old "Load"
-    new ""
+    new "Carregar"
 
     # game/screens.rpy:312
     old "Preferences"
-    new ""
+    new "Preferências"
 
     # game/screens.rpy:316
     old "End Replay"
-    new ""
+    new "Encerrar reprise"
 
     # game/screens.rpy:320
     old "Main Menu"
-    new ""
+    new "Menu principal"
 
     # game/screens.rpy:322
     old "About"
-    new ""
+    new "Sobre"
 
     # game/screens.rpy:327
     old "Help"
-    new ""
+    new "Ajuda"
 
     # game/screens.rpy:333
     old "Quit"
-    new ""
+    new "Sair"
 
     # game/screens.rpy:478
     old "Return"
-    new ""
+    new "Voltar"
 
     # game/screens.rpy:562
     old "Version [config.version!t]\n"
-    new ""
+    new "Versão [config.version!t]\n"
 
     # game/screens.rpy:568
     old "Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]"
-    new ""
+    new "Feito com {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]"
 
     # game/screens.rpy:604
     old "Page {}"
-    new ""
+    new "Página {}"
 
     # game/screens.rpy:604
     old "Automatic saves"
-    new ""
+    new "Salvamentos automáticos"
 
     # game/screens.rpy:604
     old "Quick saves"
-    new ""
+    new "Salvamentos rápidos"
 
     # game/screens.rpy:646
     old "{#file_time}%A, %B %d %Y, %H:%M"
-    new ""
+    new "{#file_time}%A, %d de %B de %Y, %H:%M"
 
     # game/screens.rpy:646
     old "empty slot"
-    new ""
+    new "espaço vazio"
 
     # game/screens.rpy:666
     old "<"
-    new ""
+    new "<"
 
     # game/screens.rpy:670
     old "{#auto_page}A"
-    new ""
+    new "{#auto_page}A"
 
     # game/screens.rpy:673
     old "{#quick_page}Q"
-    new ""
+    new "{#quick_page}R"
 
     # game/screens.rpy:679
     old ">"
-    new ""
+    new ">"
 
     # game/screens.rpy:684
     old "Upload Sync"
-    new ""
+    new "Enviar sincronização"
 
     # game/screens.rpy:688
     old "Download Sync"
-    new ""
+    new "Baixar sincronização"
 
     # game/screens.rpy:748
     old "Display"
-    new ""
+    new "Tela"
 
     # game/screens.rpy:749
     old "Window"
-    new ""
+    new "Janela"
 
     # game/screens.rpy:750
     old "Fullscreen"
-    new ""
+    new "Tela cheia"
 
     # game/screens.rpy:755
     old "Unseen Text"
-    new ""
+    new "Texto não visto"
 
     # game/screens.rpy:756
     old "After Choices"
-    new ""
+    new "Após as escolhas"
 
     # game/screens.rpy:757
     old "Transitions"
-    new ""
+    new "Transições"
 
     # game/screens.rpy:770
     old "Text Speed"
-    new ""
+    new "Velocidade do texto"
 
     # game/screens.rpy:774
     old "Auto-Forward Time"
-    new ""
+    new "Tempo de avanço automático"
 
     # game/screens.rpy:781
     old "Music Volume"
-    new ""
+    new "Volume da música"
 
     # game/screens.rpy:788
     old "Sound Volume"
-    new ""
+    new "Volume dos efeitos"
 
     # game/screens.rpy:794
     old "Test"
-    new ""
+    new "Testar"
 
     # game/screens.rpy:798
     old "Voice Volume"
-    new ""
+    new "Volume das vozes"
 
     # game/screens.rpy:809
     old "Mute All"
-    new ""
+    new "Silenciar tudo"
 
     # game/screens.rpy:928
     old "The dialogue history is empty."
-    new ""
+    new "O histórico de diálogo está vazio."
 
     # game/screens.rpy:996
     old "Keyboard"
-    new ""
+    new "Teclado"
 
     # game/screens.rpy:997
     old "Mouse"
-    new ""
+    new "Mouse"
 
     # game/screens.rpy:1000
     old "Gamepad"
-    new ""
+    new "Controle"
 
     # game/screens.rpy:1013
     old "Enter"
-    new ""
+    new "Enter"
 
     # game/screens.rpy:1014
     old "Advances dialogue and activates the interface."
-    new ""
+    new "Avança o diálogo e ativa a interface."
 
     # game/screens.rpy:1017
     old "Space"
-    new ""
+    new "Espaço"
 
     # game/screens.rpy:1018
     old "Advances dialogue without selecting choices."
-    new ""
+    new "Avança o diálogo sem selecionar escolhas."
 
     # game/screens.rpy:1021
     old "Arrow Keys"
-    new ""
+    new "Teclas de seta"
 
     # game/screens.rpy:1022
     old "Navigate the interface."
-    new ""
+    new "Navega pela interface."
 
     # game/screens.rpy:1025
     old "Escape"
-    new ""
+    new "Esc"
 
     # game/screens.rpy:1026
     old "Accesses the game menu."
-    new ""
+    new "Abre o menu do jogo."
 
     # game/screens.rpy:1029
     old "Ctrl"
-    new ""
+    new "Ctrl"
 
     # game/screens.rpy:1030
     old "Skips dialogue while held down."
-    new ""
+    new "Pula os diálogos enquanto estiver pressionada."
 
     # game/screens.rpy:1033
     old "Tab"
-    new ""
+    new "Tab"
 
     # game/screens.rpy:1034
     old "Toggles dialogue skipping."
-    new ""
+    new "Ativa ou desativa o pulo de diálogos."
 
     # game/screens.rpy:1037
     old "Page Up"
-    new ""
+    new "Page Up"
 
     # game/screens.rpy:1038
     old "Rolls back to earlier dialogue."
-    new ""
+    new "Volta para diálogos anteriores."
 
     # game/screens.rpy:1041
     old "Page Down"
-    new ""
+    new "Page Down"
 
     # game/screens.rpy:1042
     old "Rolls forward to later dialogue."
-    new ""
+    new "Avança para diálogos posteriores."
 
     # game/screens.rpy:1046
     old "Hides the user interface."
-    new ""
+    new "Oculta a interface."
 
     # game/screens.rpy:1050
     old "Takes a screenshot."
-    new ""
+    new "Faz uma captura de tela."
 
     # game/screens.rpy:1054
     old "Toggles assistive {a=https://www.renpy.org/l/voicing}self-voicing{/a}."
-    new ""
+    new "Ativa ou desativa a {a=https://www.renpy.org/l/voicing}leitura em voz alta{/a}."
 
     # game/screens.rpy:1058
     old "Opens the accessibility menu."
-    new ""
+    new "Abre o menu de acessibilidade."
 
     # game/screens.rpy:1064
     old "Left Click"
-    new ""
+    new "Clique esquerdo"
 
     # game/screens.rpy:1068
     old "Middle Click"
-    new ""
+    new "Clique do meio"
 
     # game/screens.rpy:1072
     old "Right Click"
-    new ""
+    new "Clique direito"
 
     # game/screens.rpy:1076
     old "Mouse Wheel Up"
-    new ""
+    new "Roda do mouse para cima"
 
     # game/screens.rpy:1080
     old "Mouse Wheel Down"
-    new ""
+    new "Roda do mouse para baixo"
 
     # game/screens.rpy:1087
     old "Right Trigger\nA/Bottom Button"
-    new ""
+    new "Gatilho direito\nA/Botão inferior"
 
     # game/screens.rpy:1091
     old "Left Trigger\nLeft Shoulder"
-    new ""
+    new "Gatilho esquerdo\nBotão superior esquerdo"
 
     # game/screens.rpy:1095
     old "Right Shoulder"
-    new ""
+    new "Botão superior direito"
 
     # game/screens.rpy:1099
     old "D-Pad, Sticks"
-    new ""
+    new "Direcional, analógicos"
 
     # game/screens.rpy:1103
     old "Start, Guide, B/Right Button"
-    new ""
+    new "Start, Guide, B/Botão direito"
 
     # game/screens.rpy:1107
     old "Y/Top Button"
-    new ""
+    new "Y/Botão superior"
 
     # game/screens.rpy:1110
     old "Calibrate"
-    new ""
+    new "Calibrar"
 
     # game/screens.rpy:1175
     old "Yes"
-    new ""
+    new "Sim"
 
     # game/screens.rpy:1176
     old "No"
-    new ""
+    new "Não"
 
     # game/screens.rpy:1222
     old "Skipping"
-    new ""
+    new "Pulando"
 
     # game/screens.rpy:1536
     old "Menu"
-    new ""
+    new "Menu"
 
+# TODO: Translation updated at 2026-11-03 17:01
+
+translate portuguese strings:
+
+    # game/screens.rpy:257
+    old "Status"
+    new "Status"
+
+    # game/screens.rpy:275
+    old "Hunger: [hunger_lv]"
+    new "Fome: [hunger_lv]"
+
+    # game/screens.rpy:277
+    old "Relationships"
+    new "Relacionamentos"
+
+    # game/screens.rpy:279
+    old "Mila: [mila_rl_lynx]"
+    new "Mila: [mila_rl_lynx]"
+
+    # game/screens.rpy:281
+    old "Mila: [mila_rl]"
+    new "Mila: [mila_rl]"
+
+    # game/screens.rpy:282
+    old "Artur: [artur_rl]"
+    new "Artur: [artur_rl]"
+
+    # game/screens.rpy:283
+    old "Juju: [juju_rl]"
+    new "Juju: [juju_rl]"
+
+    # game/screens.rpy:284
+    old "Lynx: [lynx_rl]"
+    new "Lynx: [lynx_rl]"
+
+    # game/screens.rpy:285
+    old "Close"
+    new "Fechar"
