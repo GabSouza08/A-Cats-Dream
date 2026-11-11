@@ -277,11 +277,14 @@ screen status_screen():
             text _("Relationships") size 28
             if lynx_pov:
                 text _("Mila: [mila_rl_lynx]")
+                text _("Artur: [artur_rl_lynx]")
+                text _("Juju: [juju_rl_lynx]")
+                text _("Lynx: [lynx_rl_lynx]")
             else:
                 text _("Mila: [mila_rl]")
-            text _("Artur: [artur_rl]")
-            text _("Juju: [juju_rl]")
-            text _("Lynx: [lynx_rl]")
+                text _("Artur: [artur_rl]")
+                text _("Juju: [juju_rl]")
+                text _("Lynx: [lynx_rl]")
             textbutton _("Close") action Hide("status_screen") xalign 1.0
 
 

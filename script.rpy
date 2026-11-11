@@ -10,8 +10,11 @@ default nuzzlev2 = ""
 default artur_rl = 0
 default lynx_rl = 0
 default mila_rl = 0
-default mila_rl_lynx = 0
 default juju_rl = 0
+default mila_rl_lynx = 0
+default artur_rl_lynx = 0
+default juju_rl_lynx = 0
+default katie_rl_lynx = 0
 default hunger_lv = 0
 default lynx_pov = False
 default pairing_m_l = False
@@ -26,6 +29,8 @@ default ending = ""
 # katie is a grey cat btw
 
 #ReCasted mod could also change chars names but idk
+#We also use the internal "Project Lumikka" Codename
+#Also, Vivi reference to be added as she was the muse showdown champ, and Sara as she was 3rd on podium. as i got 2nd, no me.
 
 #we are all witnesses to a tragedy.
 #todo: write the act 3/4, and the endings. if bad = mila dies by a decorative lily, lynx follows her and eats the lily himself to join her,
@@ -33,6 +38,10 @@ default ending = ""
 #At last, Katie gets her expulsion revoked, thus waking up the other day as a normal person, but with all the memories of the chaos.
 #also if its on the good ending, she immediately goes and gets the necessary things to contest the others expulsions, and they get revoked too.
 #act 1 = yay food, act 2 is lore dumping, act 3 is separation and act 4 is finale or tragedy.
+
+#something not so interesting is the analogy that this game will be, seemingly by the route it is taking.
+#the incomplete game, just like one's life when they take it. and copyrighted songs, just like holding on to others to be happy.
+#thus making the whole game an analogy to... suicide. or depression.
 
 define cm = Character(_("Classmate"))
 define k = Character("Katie", color="5D6161")
@@ -42,6 +51,9 @@ define a = Character("Artur", color="FFAE00")
 define l = Character("Lynx", color="525252")
 define m_a = Character("Mila & Artur", color="FFFFFF")
 define evr = Character(_("Everyone"))
+define v = Character("Vivienne")
+define s = Character("Sarah")
+define v_k = Character("Vivienne & Katie")
 
 define text_pool = [
     "Fight for what you believe in, okay?",
@@ -102,9 +114,12 @@ define text_pool_pt = [
 # get some cat pics/assets
 # find EVEN MORE pics of things at university
 # more ao3 poems because yeah
-# turn a cats dream into a ao3 fandom
+# turn a cats dream into an ao3 fandom
 # finish act 3
 # add per cat relationship level
+# add an hotline call to the splashscreen
+# consider whether to save or let the game to die.
+
 
 label splashscreen:
 
@@ -124,11 +139,11 @@ label splashscreen:
         "Choose a language / Escolha o idioma."
         "English":
             $ renpy.change_language(None)
-            $ content_warning = "CONTENT WARNING: \nAcademic expulsion and political unrest; \nsocial rejection, isolation, and emotional distress; \ntransformation; coercive capture; poisoning and toxic plants; death and suicidal themes; \nfire and arson; physical confrontation; grief, panic, and religious doubt; animals in danger; and a sudden error screen."
+            $ content_warning = "CONTENT WARNING: \nAcademic expulsion and political unrest; \nsocial rejection, isolation, and emotional distress; \ntransformation; coercive capture; poisoning and toxic plants; death and suicidal themes; \nfire and arson; physical confrontation; grief, panic, and religious doubt; animals in danger; and sudden lights."
             $ lc_text = renpy.random.choice(text_pool)
         "Português":
             $ renpy.change_language("portuguese")
-            $ content_warning = "AVISO DE CONTEÚDO: \nJubilamento e conflito político; rejeição social, isolamento e sofrimento emocional; \ntransformação; captura coercitiva; envenenamento e plantas tóxicas; morte e temas de suicídio; \nfogo e incêndio criminoso; confronto físico; luto, pânico e dúvidas religiosas; animais em perigo; e uma tela de erro repentina."
+            $ content_warning = "AVISO DE CONTEÚDO: \nJubilamento e conflito político; rejeição social, isolamento e sofrimento emocional; \ntransformação; captura coercitiva; envenenamento e plantas tóxicas; morte e temas de suicídio; \nfogo e incêndio criminoso; confronto físico; luto, pânico e dúvidas religiosas; animais em perigo; e luzes repentinas."
             $ lc_text = renpy.random.choice(text_pool_pt)
 
     show text "[content_warning]" with dissolve
@@ -714,6 +729,7 @@ label start:
                 k "....What? Then how we are going to-"
                 m "Let's just walk around, okay!"
                 $ hunger_lv += 1
+                m "Maybe we can search for... hm... Artur first?"
             "Lynx":
                 $ hunger_lv += 1
                 $ discord.update(state=_("Chasing a hopeful soul..."), details=_("Act 3/4 - Across Our Lovely Reverie"))
@@ -725,7 +741,7 @@ label start:
                 if pairing_m_l == True:
                     l "Mila is more fluffy!"
                     k "Oh, the king can't spend a moment without talking about the queen."
-                    l "*blusheyour thought on this as is and songs it reminds you of, and why?s, or would if his cat form allowed him* \nI... COME ON KATIE! \n*Sighs, though shaking his head*"
+                    l "*blushes, or would if his cat form allowed him* \nI... COME ON KATIE! \n*Sighs, though shaking his head*"
                 k "So, any idea of how to get rid of... *looks at the student holding him*"
                 l "No, i dont."
                 "*A minute or two later, a bus passes, and the student leaves him to go on the bus*"
@@ -742,6 +758,8 @@ label start:
                 $ lynx_rl += 1
                 l "Thanks...?"
                 $ hunger_lv += 1
+                l "...I guess now we should search for someone else? Juju perhaps?"
+
             "Juju":
                 $ hunger_lv += 1
                 $ discord.update(state=_("Chasing a lovely dream..."), details=_("Act 3/4 - Across Our Lovely Reverie"))
@@ -757,6 +775,8 @@ label start:
                 j "Hey, we are fine! Don't worry, we can just find the rest now i guess!"
                 k "Yeah, any ideas though?"
                 $ hunger_lv += 1
+                j "Uh, no, sorry!"
+                j "We can always try to find everyone. let's.... try Lynx first?"
             "Artur":
                 $ hunger_lv += 1
                 $ discord.update(state=_("Chasing a chaotic memory..."), details=_("Act 3/4 - Across Our Lovely Reverie"))
@@ -767,7 +787,7 @@ label start:
                 $ artur_rl += 1
                 k "Yeah, i see. Though it feels nice, from a distance obviously."
                 if pairing_a_j == True:
-                    k "Do you think Juju already ran away from those people at this type?"
+                    k "Do you think Juju already ran away from those people by this time?"
                     a "She's surely quick, i believe she is looong gone. "
                     k "You look proud of her, huh."
                     a "We must be proud of our friends!"
@@ -777,99 +797,12 @@ label start:
                 a "Noooooooooooo-"
                 k "Come on, it will be fine, i am here."
                 $ hunger_lv += 1
+                k "Everyone looks so busy. Grab a cat, drop somewhere else, act like it's fine..."
+                a "Yeah. Now.... uh... they just left me, soo..."
+                a "I think, first mission of today! Find Mila!"
 
-    if _preferences.language == "portuguese":
-        "O Ato 3 está incompleto. O que vem a seguir contém spoilers do final ruim."
-    else:
-        "Act 3 is incomplete. What follows contains spoilers for the bad ending."
 
-        
-label at_worlds_end:
-
-    scene black with dissolve 
-    with Pause(2)
-    
-    show text _("Without love or hope, the Angel stands at the World's Edge")
-    with Pause(3)
-    hide text
-
-    show text _("At heaven's gate, we stand alone, as our pleas, inevitably, go unheard.")
-    with Pause(3)
-    hide text
-
-    l "Artur, Mate. Eh, my heart fails to comprehend... Ah, my time is ticking down."
-
-    l "A hope like ours won't help me now."
-
-    a "So go on and fight me, that's what you do best."
-
-    a "I preferred when you didnt have a name. after all, you always hide..."
-
-    l "Says the one who thinks everyone must bow to him."
-
-    scene cchla_end_corridor with Fade(0.5, 3.0, 2.5, color="#fff")
-    with Pause(3)
-
-    $ lynx_hp = 10
-    $ artur_hp = 10
-    $ incoming_damage = 0
-    $ lynx_warned_75 = False
-    $ lynx_warned_40 = False
-    $ lynx_warned_10 = False
-    $ artur_warned_75 = False
-    $ artur_warned_40 = False
-    $ artur_warned_10 = False
-    while lynx_hp > 0 and artur_hp > 0:
-        "Lynx: [lynx_hp]/10. Artur: [artur_hp]/10."
-
-        menu:
-            "Strike":
-                $ artur_hp = max(0, artur_hp - 2)
-                $ incoming_damage = 2
-                "You try to strike upon him."
-
-            "Brace":
-                $ incoming_damage = 1
-                "You brace for what fate will throw next."
-
-            "Speak":
-                $ incoming_damage = 1
-                l "Why did you do this??"
-                a "Stop talking and fight!"
-
-        if artur_hp > 0:
-            $ lynx_hp = max(0, lynx_hp - incoming_damage)
-            "Artur moves before you can react."
-
-        if artur_hp <= 7 and not artur_warned_75:
-            $ artur_warned_75 = True
-            a "What are you doing, 'Lynx'? Just me, and you, for what?"
-        if artur_hp <= 4 and not artur_warned_40:
-            $ artur_warned_40 = True
-            a "No! You were meant to be a friend! Why?"
-        if artur_hp <= 1 and not artur_warned_10:
-            $ artur_warned_10 = True
-            a "You hide in the shadows of your sins... You... You know #### doesn't care, right?"
-
-        if lynx_hp <= 7 and not lynx_warned_75:
-            $ lynx_warned_75 = True
-            l "So, have you found someone to fight for yet?"
-        if lynx_hp <= 4 and not lynx_warned_40:
-            $ lynx_warned_40 = True
-            l "Join me in our last dance!"
-        if lynx_hp <= 1 and not lynx_warned_10:
-            $ lynx_warned_10 = True
-            l "Forgive me, #### for i had a dream."
-
-    if lynx_hp <= 0:
-        a "An Jack becomes a King. Whoever is dealing the cards today... Ugh."
-    else:
-        l "What's the purpose of this? The Jack always fall to a King."
-
-    $ lynx_event = True
-
-    python:
-        raise RuntimeError("Sorry.")
+    "Act 3 is incomplete. What follows contains spoilers for the bad ending."
 
 label a_dreamy_requiem:
     
@@ -1002,20 +935,158 @@ label a_dreamy_requiem:
             jump heaven
         "Eat the lily.":
             jump heaven
-        "Eat the lily.":
-            jump heaven
-        "Eat the lily.":
-            jump heaven
-        "Eat the lily.":
-            jump heaven
-        "Eat the lily.":
-            jump heaven
         "Abandon her":
             pass
 
     l "I... i.... aaaah!"
 
     "You run away."
+
+label at_worlds_end:
+
+    scene black with dissolve 
+    with Pause(2)
+    
+    show text _("Without love or hope, the Angel stands at the World's Edge")
+    with Pause(3)
+    hide text
+
+    show text _("At heaven's gate, we stand alone, as our pleas, inevitably, go unheard.")
+    with Pause(3)
+    hide text
+
+    $ lynx_event = True
+
+    l "Artur, Mate. Eh, my heart fails to comprehend... Ah, my time is ticking down."
+
+    l "A hope like ours won't help me now."
+
+    a "So go on and fight me, that's what you do best."
+
+    a "I preferred when you didnt have a name. after all, you always hide..."
+
+    l "Says the one who thinks everyone must bow to him."
+
+    a "You're just envious, kid. Just because you were always in the shadows of someone."
+
+    l "SHUT THE FUCK UP!"
+
+    scene cchla_end_corridor with Fade(0.5, 3.0, 2.5, color="#fff")
+    with Pause(3)
+
+    l "So, have you found someone to fight for yet? Buddy."
+
+    "Artur moves before you can react."
+
+    a "What are you doing, 'Lynx'? Just me, and you, for what?"
+
+    menu whywedointhis:
+        ""
+        "Fight":
+            pass
+
+    a "No! You were meant to be a friend! Why?"
+
+    l "Mila? I can hear you somewhere! Join me in our last dance!"
+
+    a "You hide in the shadows of your sins... You... You know #### doesn't care, right?"
+
+    menu whywedointhis1:
+        ""
+        "Fight":
+            pass
+
+    l "Forgive me, #### for i had a dream."
+
+    a "What's the point of all of this?"
+
+    a "You're losing your already lost mind!"
+
+    l "Come and find me, Mila. Put me out of this suffering and let your love tear me apart."
+
+    menu whywedointhis2:
+        ""
+        "Fight":
+            pass
+    a "...."
+
+    l "...."
+
+    l "We could have been friends, but instead, you overlooked me like everyone."
+
+    menu whywedointhis3:
+        ""
+        "Fight":
+            pass
+
+    a "I want to understand, actually. Why?"
+
+    "*The wind bustles once more.*"
+
+    scene black with dissolve 
+    with Pause(2)
+    
+    show text _("Somewhere in this broken dream.")
+    with Pause(3)
+    hide text with dissolve
+
+    k "Stand up and fight! Isn't this what you wished?"
+
+    "....."
+
+    "I'm just another witness to this."
+
+    show text _("In the eye of the storm, a flower blooms at last.")
+    with Pause(3)
+    hide text with dissolve
+
+    v "Would you say i'm worthy of love?"
+
+    v "Give me a reason to believe!"
+
+    v "Do i need to look at the heaven above..."
+
+    v "...So that maybe all of this will suceed?"
+
+    k "..."
+
+    v "Scattered hearts across the floor,"
+
+    v "I can't believe no more that maybe there's..."
+
+    v "...a reason, to believe and maybe a..."
+
+    v "Shot at heaven's love again!"
+
+    v_k "In aeternum in (Forever in a)"
+
+    v_k "Somnio Amoeno (Lovely dream)"
+
+    v_k "Vix exspecto ut (I can't wait to)"
+
+    v_k "Videam quomodo sentiatur (See how it feels to-)"
+
+    k "Love me again at last!"
+
+    v "Shred the worries of my heart!"
+
+    k "Let all dreams bloom again!"
+
+    v "Don't let this tragedy be how it ends!"
+
+    k "Wake me up from this evanescent memento-"
+
+    v "Why do you think you can save us from this lament-"
+
+    v_k "I am all i could ever be for you!"
+
+    v_k "I am all but a dying dream for you."
+
+    "The flowers bloom once more."
+
+    show text _("SubAct 1 - Dies Quo Viviana Rursus Amavit - Complete..")
+    with Pause(3)
+    hide text with dissolve
 
 label heaven:
 

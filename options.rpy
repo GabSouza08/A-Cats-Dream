@@ -35,7 +35,7 @@ Made originally as a board game, turned digital as a VN.\n
 Special thanks to Izaquiel, for giving me the final push to start making this game.\n
 And also for playtesting this.... Right?\n
 Now featuring Discord RPC and some extras.\n
-Check this cool playlist i did for the game as an ust btw! https://open.spotify.com/playlist/66063NghQqQpDB4k3foWWD
+OST soon when i stop procrastinating for once.
 """)
 
 
