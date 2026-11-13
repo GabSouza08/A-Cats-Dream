@@ -373,3 +373,19 @@ translate portuguese strings:
     # game/screens.rpy:285
     old "Close"
     new "Fechar"
+# TODO: Translation updated at 2026-11-13 09:51
+
+translate portuguese strings:
+
+    # game/screens.rpy:280
+    old "Artur: [artur_rl_lynx]"
+    new ""
+
+    # game/screens.rpy:281
+    old "Juju: [juju_rl_lynx]"
+    new ""
+
+    # game/screens.rpy:282
+    old "Lynx: [lynx_rl_lynx]"
+    new ""
+

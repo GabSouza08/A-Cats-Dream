@@ -117,8 +117,8 @@ define text_pool_pt = [
 # turn a cats dream into an ao3 fandom
 # finish act 3
 # add per cat relationship level
-# add an hotline call to the splashscreen
 # consider whether to save or let the game to die.
+#TODO: Decide whether to keep the analogy or no, plus decide whether use the pics or no.
 
 
 label splashscreen:
@@ -148,6 +148,10 @@ label splashscreen:
 
     show text "[content_warning]" with dissolve
     with Pause(10)
+    hide text
+
+    show text _("No matter how dire things seem, there will be always someone looking over you.\n Visit 988lifeline.org if you need someone to talk to.") with dissolve
+    with Pause(5)
     hide text
 
     show text "[lc_text]" with dissolve
@@ -732,6 +736,15 @@ label start:
                 m "Maybe we can search for... hm... Artur first?"
                 k "It makes sense, actually. Any ideas though?"
                 m "I think i know a place, maybe."
+                scene black
+                show text _("Some hours later....") with dissolve
+                with Pause(3)
+                hide text
+                "*The wind blows stronger.*"
+                k "Is this who i think it is?"
+                j "Heeey, long time no see!"
+                j "Finally i found someone cool again!"
+                k ""
             "Lynx":
                 $ hunger_lv += 1
                 $ discord.update(state=_("Chasing a hopeful soul..."), details=_("Act 3/4 - Across Our Lovely Reverie"))
@@ -761,7 +774,6 @@ label start:
                 l "Thanks...?"
                 $ hunger_lv += 1
                 l "...I guess now we should search for someone else? Juju perhaps?"
-
             "Juju":
                 $ hunger_lv += 1
                 $ discord.update(state=_("Chasing a lovely dream..."), details=_("Act 3/4 - Across Our Lovely Reverie"))

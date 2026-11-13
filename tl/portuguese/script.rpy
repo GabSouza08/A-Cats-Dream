@@ -2246,3 +2246,377 @@ translate portuguese strings:
     old "Everyone"
     new "Todos"
 
+# TODO: Translation updated at 2026-11-13 09:51
+
+# game/script.rpy:737
+translate portuguese before_storm_c5956256:
+
+    # m "Maybe we can search for... hm... Artur first?"
+    m ""
+
+# game/script.rpy:738
+translate portuguese before_storm_9fbc1ab4:
+
+    # k "It makes sense, actually. Any ideas though?"
+    k ""
+
+# game/script.rpy:739
+translate portuguese before_storm_43186a1a:
+
+    # m "I think i know a place, maybe."
+    m ""
+
+# game/script.rpy:744
+translate portuguese before_storm_dcb05b35:
+
+    # "*The wind blows stronger.*"
+    ""
+
+# game/script.rpy:745
+translate portuguese before_storm_f60aecab:
+
+    # k "Is this who i think it is?"
+    k ""
+
+# game/script.rpy:746
+translate portuguese before_storm_2f9cecd5:
+
+    # j "Heeey, long time no see!"
+    j ""
+
+# game/script.rpy:747
+translate portuguese before_storm_8a3797a2:
+
+    # j "Finally i found someone cool again!"
+    j ""
+
+# game/script.rpy:748
+translate portuguese before_storm_f608652d:
+
+    # k ""
+    k ""
+
+# game/script.rpy:760
+translate portuguese before_storm_bafec0bb:
+
+    # l "*blushes, or would if his cat form allowed him* \nI... COME ON KATIE! \n*Sighs, though shaking his head*"
+    l ""
+
+# game/script.rpy:777
+translate portuguese before_storm_6d9edd66:
+
+    # l "...I guess now we should search for someone else? Juju perhaps?"
+    l ""
+
+# game/script.rpy:793
+translate portuguese before_storm_56098c98:
+
+    # j "Uh, no, sorry!"
+    j ""
+
+# game/script.rpy:794
+translate portuguese before_storm_27728571:
+
+    # j "We can always try to find everyone. let's.... try Lynx first?"
+    j ""
+
+# game/script.rpy:805
+translate portuguese before_storm_07c0b0d4:
+
+    # k "Do you think Juju already ran away from those people by this time?"
+    k ""
+
+# game/script.rpy:815
+translate portuguese before_storm_1c683e3b:
+
+    # k "Everyone looks so busy. Grab a cat, drop somewhere else, act like it's fine..."
+    k ""
+
+# game/script.rpy:816
+translate portuguese before_storm_8e6c8bbe:
+
+    # a "Yeah. Now.... uh... they just left me, soo..."
+    a ""
+
+# game/script.rpy:817
+translate portuguese before_storm_fcd08e03:
+
+    # a "I think, first mission of today! Find Mila!"
+    a ""
+
+# game/script.rpy:860
+translate portuguese a_dreamy_requiem_8dcf8c15:
+
+    # m "{cps=26}I don't know... L-Lynx.{/cps}"
+    m ""
+
+# game/script.rpy:987
+translate portuguese at_worlds_end_5f6da3b1:
+
+    # a "You're just envious, kid. Just because you were always in the shadows of someone."
+    a ""
+
+# game/script.rpy:989
+translate portuguese at_worlds_end_81cc0cd2:
+
+    # l "SHUT THE FUCK UP!"
+    l ""
+
+# game/script.rpy:994
+translate portuguese at_worlds_end_6de06606:
+
+    # l "So, have you found someone to fight for yet? Buddy."
+    l ""
+
+# game/script.rpy:1005
+translate portuguese whywedointhis_24e2164a:
+
+    # a "No! You were meant to be a friend! Why?"
+    a ""
+
+# game/script.rpy:1007
+translate portuguese whywedointhis_cda2df0d:
+
+    # l "Mila? I can hear you somewhere! Join me in our last dance!"
+    l ""
+
+# game/script.rpy:1009
+translate portuguese whywedointhis_4ee204e0:
+
+    # a "You hide in the shadows of your sins... You... You know #### doesn't care, right?"
+    a ""
+
+# game/script.rpy:1016
+translate portuguese whywedointhis1_3840c179:
+
+    # l "Forgive me, #### for i had a dream."
+    l ""
+
+# game/script.rpy:1018
+translate portuguese whywedointhis1_c94f7e7b:
+
+    # a "What's the point of all of this?"
+    a ""
+
+# game/script.rpy:1020
+translate portuguese whywedointhis1_77e4b8b7:
+
+    # a "You're losing your already lost mind!"
+    a ""
+
+# game/script.rpy:1022
+translate portuguese whywedointhis1_1a032036:
+
+    # l "Come and find me, Mila. Put me out of this suffering and let your love tear me apart."
+    l ""
+
+# game/script.rpy:1028
+translate portuguese whywedointhis2_31d796dc:
+
+    # a "...."
+    a ""
+
+# game/script.rpy:1030
+translate portuguese whywedointhis2_2e3dc61c:
+
+    # l "...."
+    l ""
+
+# game/script.rpy:1032
+translate portuguese whywedointhis2_83ec9b1b:
+
+    # l "We could have been friends, but instead, you overlooked me like everyone."
+    l ""
+
+# game/script.rpy:1039
+translate portuguese whywedointhis3_4c0c658a:
+
+    # a "I want to understand, actually. Why?"
+    a ""
+
+# game/script.rpy:1041
+translate portuguese whywedointhis3_797cbce3:
+
+    # "*The wind bustles once more.*"
+    ""
+
+# game/script.rpy:1050
+translate portuguese whywedointhis3_2db33fdd:
+
+    # k "Stand up and fight! Isn't this what you wished?"
+    k ""
+
+# game/script.rpy:1052
+translate portuguese whywedointhis3_07bdde05:
+
+    # "....."
+    ""
+
+# game/script.rpy:1054
+translate portuguese whywedointhis3_ae8a4abf:
+
+    # "I'm just another witness to this."
+    ""
+
+# game/script.rpy:1060
+translate portuguese whywedointhis3_dd779e05:
+
+    # v "Would you say i'm worthy of love?"
+    v ""
+
+# game/script.rpy:1062
+translate portuguese whywedointhis3_9149c690:
+
+    # v "Give me a reason to believe!"
+    v ""
+
+# game/script.rpy:1064
+translate portuguese whywedointhis3_6a0a918c:
+
+    # v "Do i need to look at the heaven above..."
+    v ""
+
+# game/script.rpy:1066
+translate portuguese whywedointhis3_c0852bcf:
+
+    # v "...So that maybe all of this will suceed?"
+    v ""
+
+# game/script.rpy:1068
+translate portuguese whywedointhis3_82091822:
+
+    # k "..."
+    k ""
+
+# game/script.rpy:1070
+translate portuguese whywedointhis3_632db495:
+
+    # v "Scattered hearts across the floor,"
+    v ""
+
+# game/script.rpy:1072
+translate portuguese whywedointhis3_902614c1:
+
+    # v "I can't believe no more that maybe there's..."
+    v ""
+
+# game/script.rpy:1074
+translate portuguese whywedointhis3_a5e4e313:
+
+    # v "...a reason, to believe and maybe a..."
+    v ""
+
+# game/script.rpy:1076
+translate portuguese whywedointhis3_7e3d2828:
+
+    # v "Shot at heaven's love again!"
+    v ""
+
+# game/script.rpy:1078
+translate portuguese whywedointhis3_d390a0fa:
+
+    # v_k "In aeternum in (Forever in a)"
+    v_k ""
+
+# game/script.rpy:1080
+translate portuguese whywedointhis3_00f52e32:
+
+    # v_k "Somnio Amoeno (Lovely dream)"
+    v_k ""
+
+# game/script.rpy:1082
+translate portuguese whywedointhis3_918bfbaa:
+
+    # v_k "Vix exspecto ut (I can't wait to)"
+    v_k ""
+
+# game/script.rpy:1084
+translate portuguese whywedointhis3_72dfd7aa:
+
+    # v_k "Videam quomodo sentiatur (See how it feels to-)"
+    v_k ""
+
+# game/script.rpy:1086
+translate portuguese whywedointhis3_338b0a45:
+
+    # k "Love me again at last!"
+    k ""
+
+# game/script.rpy:1088
+translate portuguese whywedointhis3_f0ae0cb9:
+
+    # v "Shred the worries of my heart!"
+    v ""
+
+# game/script.rpy:1090
+translate portuguese whywedointhis3_27d4a753:
+
+    # k "Let all dreams bloom again!"
+    k ""
+
+# game/script.rpy:1092
+translate portuguese whywedointhis3_005bdc30:
+
+    # v "Don't let this tragedy be how it ends!"
+    v ""
+
+# game/script.rpy:1094
+translate portuguese whywedointhis3_4004ca92:
+
+    # k "Wake me up from this evanescent memento-"
+    k ""
+
+# game/script.rpy:1096
+translate portuguese whywedointhis3_439362b2:
+
+    # v "Why do you think you can save us from this lament-"
+    v ""
+
+# game/script.rpy:1098
+translate portuguese whywedointhis3_fcc82bbb:
+
+    # v_k "I am all i could ever be for you!"
+    v_k ""
+
+# game/script.rpy:1100
+translate portuguese whywedointhis3_c2983b85:
+
+    # v_k "I am all but a dying dream for you."
+    v_k ""
+
+# game/script.rpy:1102
+translate portuguese whywedointhis3_6c89058d:
+
+    # "The flowers bloom once more."
+    ""
+
+translate portuguese strings:
+
+    # game/script.rpy:154
+    old "No matter how dire things seem, there will be always someone looking over you.\n Visit 988lifeline.org if you need someone to talk to."
+    new "Não importa quão ruim as coisas pareçam, sempre vai ter alguém se importando por você\n Visite cvv.org.br para falar com alguém."
+
+    # game/script.rpy:741
+    old "Some hours later...."
+    new "Algumas horas depois."
+
+    # game/script.rpy:1000
+    old ""
+    new ""
+
+    # game/script.rpy:1002
+    old "Fight"
+    new "Lute"
+
+    # game/script.rpy:1046
+    old "Somewhere in this broken dream."
+    new "Em algum lugar neste sonho destruído"
+
+    # game/script.rpy:1056
+    old "In the eye of the storm, a flower blooms at last."
+    new "No olho da tempestade, uma flor floresce enfim."
+
+    # game/script.rpy:1104
+    old "SubAct 1 - Dies Quo Viviana Rursus Amavit - Complete.."
+    new "SubAto 1 - Dies Quo Viviana Rursus Amavit - Completo"
+
