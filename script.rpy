@@ -730,6 +730,8 @@ label start:
                 m "Let's just walk around, okay!"
                 $ hunger_lv += 1
                 m "Maybe we can search for... hm... Artur first?"
+                k "It makes sense, actually. Any ideas though?"
+                m "I think i know a place, maybe."
             "Lynx":
                 $ hunger_lv += 1
                 $ discord.update(state=_("Chasing a hopeful soul..."), details=_("Act 3/4 - Across Our Lovely Reverie"))
@@ -954,6 +956,8 @@ label at_worlds_end:
     show text _("At heaven's gate, we stand alone, as our pleas, inevitably, go unheard.")
     with Pause(3)
     hide text
+
+    return
 
     $ lynx_event = True
 
