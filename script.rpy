@@ -22,15 +22,16 @@ default pairing_a_j = False
 default pairing_k = ""
 default ending = ""
 
-# lynx is a black cat
-# artur is pure orange energy and we all know it
-# mila is a fluffy white cat
-# juju is a tricolor cat. cool af.
-# katie is a grey cat btw
+# lynx is a black cat (black york chocolate)
+# artur is pure orange energy and we all know it (orange domestic shorthair)
+# mila is a fluffy white cat (white ragdoll)
+# juju is a tricolor cat, cool af (calico american shorthair)
+# katie is a grey cat btw (grey nebelung)
 
 #ReCasted mod could also change chars names but idk
-#We also use the internal "Project Lumikka" Codename
-#Also, Vivi reference to be added as she was the muse showdown champ, and Sara as she was 3rd on podium. as i got 2nd, no me.
+#We also use the internal "Project Lumikka" Codename for ReCasted mod
+#for normal game, Project Golden Lily shall do
+#Also, Vivi reference to be added as she was the muse showdown champ
 
 #we are all witnesses to a tragedy.
 #todo: write the act 3/4, and the endings. if bad = mila dies by a decorative lily, lynx follows her and eats the lily himself to join her,
@@ -38,10 +39,6 @@ default ending = ""
 #At last, Katie gets her expulsion revoked, thus waking up the other day as a normal person, but with all the memories of the chaos.
 #also if its on the good ending, she immediately goes and gets the necessary things to contest the others expulsions, and they get revoked too.
 #act 1 = yay food, act 2 is lore dumping, act 3 is separation and act 4 is finale or tragedy.
-
-#something not so interesting is the analogy that this game will be, seemingly by the route it is taking.
-#the incomplete game, just like one's life when they take it. and copyrighted songs, just like holding on to others to be happy.
-#thus making the whole game an analogy to... suicide. or depression.
 
 define cm = Character(_("Classmate"))
 define k = Character("Katie", color="5D6161")
@@ -52,7 +49,6 @@ define l = Character("Lynx", color="525252")
 define m_a = Character("Mila & Artur", color="FFFFFF")
 define evr = Character(_("Everyone"))
 define v = Character("Vivienne")
-define s = Character("Sarah")
 define v_k = Character("Vivienne & Katie")
 
 define text_pool = [
@@ -139,20 +135,16 @@ label splashscreen:
         "Choose a language / Escolha o idioma."
         "English":
             $ renpy.change_language(None)
-            $ content_warning = "CONTENT WARNING: \nAcademic expulsion and political unrest; \nsocial rejection, isolation, and emotional distress; \ntransformation; coercive capture; poisoning and toxic plants; death and suicidal themes; \nfire and arson; physical confrontation; grief, panic, and religious doubt; animals in danger; and sudden lights."
+            $ content_warning = "CONTENT WARNING: \nsocial rejection, isolation, and emotional distress; \ndeath and suicidal themes; \nanimals in danger; and sudden lights."
             $ lc_text = renpy.random.choice(text_pool)
         "Português":
             $ renpy.change_language("portuguese")
-            $ content_warning = "AVISO DE CONTEÚDO: \nJubilamento e conflito político; rejeição social, isolamento e sofrimento emocional; \ntransformação; captura coercitiva; envenenamento e plantas tóxicas; morte e temas de suicídio; \nfogo e incêndio criminoso; confronto físico; luto, pânico e dúvidas religiosas; animais em perigo; e luzes repentinas."
+            $ content_warning = "AVISO DE CONTEÚDO: \nRejeição social, isolamento e sofrimento emocional; \nmorte e temas de suicídio; \nanimais em perigo; e luzes repentinas."
             $ lc_text = renpy.random.choice(text_pool_pt)
 
-    show text "[content_warning]" with dissolve
-    with Pause(10)
-    hide text
-
-    show text _("No matter how dire things seem, there will be always someone looking over you.\n Visit 988lifeline.org if you need someone to talk to.") with dissolve
-    with Pause(5)
-    hide text
+    # show text "[content_warning]" with dissolve
+    # with Pause(10)
+    # hide text
 
     show text "[lc_text]" with dissolve
     with Pause(3)
@@ -502,6 +494,20 @@ label start:
 
     m "Anyways... let us talk about something nicer, okay?"
 
+    "*Something walks by, breathing heavily*"
+
+    "Ah... i..."
+
+    "Hi, i... Can i get some food too?"
+
+    k "Who you may be...?"
+
+    v "I'm Vivienne."
+
+    m "Oh, i have seen you somewhere through here."
+
+    a "I wonder how many more people we can get"
+
     scene black with dissolve
 
     show text _("Act 1 Finished.") with dissolve
@@ -741,10 +747,39 @@ label start:
                 with Pause(3)
                 hide text
                 "*The wind blows stronger.*"
+                scene cchla_ext with fade
                 k "Is this who i think it is?"
                 j "Heeey, long time no see!"
                 j "Finally i found someone cool again!"
-                k ""
+                k "Yeah. I'm happier now."
+                j "Also, you don't know who i found in the way here!"
+                m "Who?"
+                a "MEEEE!"
+                k "Great, this will be soo chaotic."
+                a "Hey, a little chaos never did bad to anyone!"
+                k "Sure, coming from you i don't trust it."
+                m "Well, maybe this what we need, Katie. Just chill for a moment."
+                j "Alright... yeah. I could take a nap, you know?"
+                a "Already?? We barely..."
+                "*you hear some rustling far away..*"
+                k "Oh, food. I was hungry."
+                "You feel your heartbeat quickening."
+                menu lynx_trigger:
+                    "What to do?"
+                    "Eat":
+                        $ hunger_lv = 0
+                        $ lynx_pov = True
+                        "Your heartbeat quickens once more. But it's possibly just hunger"
+                    "Wait for someone.":
+                        k "Okay, can we? I'm going."
+                        m "Sure, missus."
+                        a "Alright! Coming!"
+                        $ hunger_lv = 0
+                k "So, where was those people going, Artur? You who seem to be more energetic.."
+                a "Some sorta flower festival. Wanna check it?"
+                k "Yeah, sure."
+                k "But it needs to be really now? I just ate..."
+                j "Come on, it will be fun!"
             "Lynx":
                 $ hunger_lv += 1
                 $ discord.update(state=_("Chasing a hopeful soul..."), details=_("Act 3/4 - Across Our Lovely Reverie"))
@@ -814,13 +849,16 @@ label start:
                 k "Everyone looks so busy. Grab a cat, drop somewhere else, act like it's fine..."
                 a "Yeah. Now.... uh... they just left me, soo..."
                 a "I think, first mission of today! Find Mila!"
+                k "Actually, that calico cat seems... familiar. Is it whom i think it is?"
+                j "HEEEEEY It's me!"
 
+    "Act 3 is incomplete."
 
-    "Act 3 is incomplete. What follows contains spoilers for the bad ending."
-
-label a_dreamy_requiem:
+label festival:
+    "This is still in progress. See you soon!"
+    return
     
-    $ lynx_pov = True
+label a_dreamy_requiem:
 
     scene black with fade
 
@@ -844,7 +882,7 @@ label a_dreamy_requiem:
 
     "*Mila rushes to spit it out*"
 
-    l "Okay, uh, come on, its.... Its letal!"
+    l "Okay, uh, come on, its.... Its lethal!"
 
     l "I dont think anyone can hear us."
 
@@ -969,10 +1007,6 @@ label at_worlds_end:
     with Pause(3)
     hide text
 
-    return
-
-    $ lynx_event = True
-
     l "Artur, Mate. Eh, my heart fails to comprehend... Ah, my time is ticking down."
 
     l "A hope like ours won't help me now."
@@ -1024,6 +1058,7 @@ label at_worlds_end:
         ""
         "Fight":
             pass
+        
     a "...."
 
     l "...."
@@ -1037,7 +1072,7 @@ label at_worlds_end:
 
     a "I want to understand, actually. Why?"
 
-    "*The wind bustles once more.*"
+    "*The wind rustles once more.*"
 
     scene black with dissolve 
     with Pause(2)
@@ -1100,6 +1135,7 @@ label at_worlds_end:
 
     "The flowers bloom once more."
 
+    scene black
     show text _("SubAct 1 - Dies Quo Viviana Rursus Amavit - Complete..")
     with Pause(3)
     hide text with dissolve

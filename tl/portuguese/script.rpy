@@ -1290,270 +1290,6 @@ translate portuguese before_storm_481a03f3:
     # m "Let's just walk around, okay!"
     m "Vamos só dar uma volta, tá!"
 
-# game/script.rpy:710
-translate portuguese before_storm_7324c599:
-
-    # k "I know that guy, let me follow him now!"
-    k "Conheço aquele cara. Deixa eu segui-lo!"
-
-# game/script.rpy:712
-translate portuguese before_storm_5aab4ae2:
-
-    # l "I swear people used to say black cats are a bad omen. So why did they also pick me!"
-    l "Juro que as pessoas diziam que gatos pretos davam azar. Então por que também me escolheram?"
-
-# game/script.rpy:713
-translate portuguese before_storm_699a6d5c:
-
-    # k "You're fluffy."
-    k "Você é fofinho."
-
-# game/script.rpy:716
-translate portuguese before_storm_3a57cf0c:
-
-    # l "Mila is more fluffy!"
-    l "A Mila é mais fofa!"
-
-# game/script.rpy:717
-translate portuguese before_storm_5c823261:
-
-    # k "Oh, the king can't spend a moment without talking about the queen."
-    k "Ah, o rei não consegue passar um instante sem falar da rainha."
-
-# game/script.rpy:718
-translate portuguese before_storm_245a062e:
-
-    # l "*blusheyour thought on this as is and songs it reminds you of, and why?s, or would if his cat form allowed him* \nI... COME ON KATIE! \n*Sighs, though shaking his head*"
-    l "*corando ao pensar nisso e nas músicas que isso lhe lembra, se sua forma de gato permitisse* \nEu... AH, KATIE! \n*suspira, balançando a cabeça*"
-
-# game/script.rpy:719
-translate portuguese before_storm_114d9b56:
-
-    # k "So, any idea of how to get rid of... *looks at the student holding him*"
-    k "Então, alguma ideia de como se livrar de... *olha para o estudante que o segura*"
-
-# game/script.rpy:720
-translate portuguese before_storm_d0767d68:
-
-    # l "No, i dont."
-    l "Não, não tenho."
-
-# game/script.rpy:721
-translate portuguese before_storm_4b50a58c:
-
-    # "*A minute or two later, a bus passes, and the student leaves him to go on the bus*"
-    "*Um ou dois minutos depois, um ônibus passa e o estudante o solta para embarcar.*"
-
-# game/script.rpy:722
-translate portuguese before_storm_c4d033ca:
-
-    # l "Finally. I crave the warmth of someone, not theirs though."
-    l "Finalmente. Sinto falta do calor de alguém, mas não do deles."
-
-# game/script.rpy:723
-translate portuguese before_storm_ac6575aa:
-
-    # l "I wonder, though. One of they had a cross. I was taught that cats don't go to heaven, because no soul."
-    l "Fico pensando, porém. Um deles tinha uma cruz. Me ensinaram que gatos não vão para o céu porque não têm alma."
-
-# game/script.rpy:724
-translate portuguese before_storm_3925bf1d:
-
-    # "You listen intently."
-    "Você escuta com atenção."
-
-# game/script.rpy:725
-translate portuguese before_storm_c9b190ab:
-
-    # l "Does that mean we are condemned out of heaven just because we became this, no matter what our actions were?"
-    l "Isso quer dizer que estamos condenados a ficar fora do céu só por termos nos tornado isso, não importa o que tenhamos feito?"
-
-# game/script.rpy:726
-translate portuguese before_storm_02d7948b:
-
-    # k "Woah, so deep thoughts outta nowhere."
-    k "Uau, que pensamentos profundos do nada."
-
-# game/script.rpy:727
-translate portuguese before_storm_2d481540:
-
-    # l "I know, but, like, does a god so lovingly to make many creations decides to throw those who cannot worship him?"
-    l "Eu sei, mas... um deus que cria tantas coisas com tanto amor decide expulsar quem não pode adorá-lo?"
-
-# game/script.rpy:728
-translate portuguese before_storm_6ab71b12:
-
-    # l "Why? Does the fact we became something other than what he set us as makes us a instant sin meant to be erased?"
-    l "Por quê? O fato de termos nos tornado algo diferente do que ele nos fez para ser nos transforma num pecado que merece ser apagado?"
-
-# game/script.rpy:729
-translate portuguese before_storm_548c408d:
-
-    # k "I didn't become a cat just to be still reflecting on religious things, please!"
-    k "Eu não virei gata pra continuar refletindo sobre religião, por favor!"
-
-# game/script.rpy:730
-translate portuguese before_storm_3ca119eb:
-
-    # l "And now that i think, it's not only about cats that this applies to."
-    l "E agora que penso nisso, não se aplica só aos gatos."
-
-# game/script.rpy:731
-translate portuguese before_storm_7c491dc7:
-
-    # k "What matters is not what form you have been given, only the form you see yourself as, the one you truly are."
-    k "O que importa não é a forma que deram a você, mas a forma como você se vê, quem você realmente é."
-
-# game/script.rpy:733
-translate portuguese before_storm_c363b123:
-
-    # l "Thanks...?"
-    l "Obrigado...?"
-
-# game/script.rpy:736
-translate portuguese before_storm_7783d776:
-
-    # k "Ugh, come on, Juju i will find you!"
-    k "Ugh, vamos, Juju. Vou encontrar você!"
-
-# game/script.rpy:738
-translate portuguese before_storm_f1c99e96:
-
-    # "*You sighted Juju. She seems to be barely evading them. Thus you meow loudly at them*"
-    "*Você avista Juju. Ela mal consegue escapar deles. Então mia alto para chamar a atenção.*"
-
-# game/script.rpy:739
-translate portuguese before_storm_bca06314:
-
-    # j "Thanks for the distraction! *manages to run away from the colleague looking on your direction*" with hpunch
-    j "Obrigada por me distrair! *consegue fugir da colega que olhava na sua direção*" with hpunch
-
-# game/script.rpy:741
-translate portuguese before_storm_16e6cfd3:
-
-    # j "They think calico is something insanely rare, but when theres literal nebelungs and york chocolates... yeah"
-    j "Eles acham que gatos calico são incrivelmente raros, mas tem nebelungs e york chocolates de verdade por aí... é."
-
-# game/script.rpy:742
-translate portuguese before_storm_0c85b115:
-
-    # k "I am a nebelung? I mean, i didn't see a mirror yet..."
-    k "Eu sou uma nebelung? Quer dizer, ainda nem me olhei no espelho..."
-
-# game/script.rpy:743
-translate portuguese before_storm_7af8080f:
-
-    # j "Yeah, a fluffy, quiet nebelung. And im what, a shorthair calico?"
-    j "É, uma nebelung fofinha e quietinha. E eu sou o quê, uma calico de pelo curto?"
-
-# game/script.rpy:744
-translate portuguese before_storm_68a23d97:
-
-    # k "I didn't study it much, you know? The cat knower is lynx, wherever he is."
-    k "Não estudei muito isso, sabe? Quem entende de gatos é o Lynx, seja lá onde ele estiver."
-
-# game/script.rpy:745
-translate portuguese before_storm_8a7b33c7:
-
-    # j "Hey, we are fine! Don't worry, we can just find the rest now i guess!"
-    j "Ei, estamos bem! Não se preocupe, acho que agora podemos encontrar os outros!"
-
-# game/script.rpy:746
-translate portuguese before_storm_edbd9e45:
-
-    # k "Yeah, any ideas though?"
-    k "É, mas tem alguma ideia?"
-
-# game/script.rpy:749
-translate portuguese before_storm_e344a168:
-
-    # k "Poor Artur, though maybe he will have fun with this."
-    k "Coitado do Artur, mas talvez ele esteja se divertindo com isso."
-
-# game/script.rpy:751
-translate portuguese before_storm_b6bf00db:
-
-    # "*Someone is playing with Artur. As soon as he sights me, he lets a sigh of relief.*"
-    "*Alguém está brincando com Artur. Assim que me avista, ele solta um suspiro de alívio.*"
-
-# game/script.rpy:752
-translate portuguese before_storm_08bfc9be:
-
-    # a "Katie, finally! It's not the best thing to be passed around like a fluffy ball!"
-    a "Katie, até que enfim! Não é muito legal ficar passando de mão em mão como uma bolinha peluda!"
-
-# game/script.rpy:754
-translate portuguese before_storm_85e6f213:
-
-    # k "Yeah, i see. Though it feels nice, from a distance obviously."
-    k "É, entendi. Embora pareça bom, de longe, obviamente."
-
-# game/script.rpy:756
-translate portuguese before_storm_824f9ada:
-
-    # k "Do you think Juju already ran away from those people at this type?"
-    k "Acha que a Juju já conseguiu fugir daquelas pessoas a essa altura?"
-
-# game/script.rpy:757
-translate portuguese before_storm_5a49c02b:
-
-    # a "She's surely quick, i believe she is looong gone. "
-    a "Ela é bem rápida. Aposto que já foi looonge."
-
-# game/script.rpy:758
-translate portuguese before_storm_d898140f:
-
-    # k "You look proud of her, huh."
-    k "Você parece orgulhoso dela, hein."
-
-# game/script.rpy:759
-translate portuguese before_storm_2db748c1:
-
-    # a "We must be proud of our friends!"
-    a "Temos que ter orgulho dos nossos amigos!"
-
-# game/script.rpy:760
-translate portuguese before_storm_cb9117cf:
-
-    # k "I know, but... Hm... Guess you found a new liking other than chemistry."
-    k "Eu sei, mas... hm... parece que você encontrou algo de que gosta além de química."
-
-# game/script.rpy:761
-translate portuguese before_storm_6dd47d77:
-
-    # a "HEEEEY- \n*tries to get out to go at her, to no avail*"
-    a "HEEEEI— \n*tenta se soltar para ir atrás dela, sem sucesso*"
-
-# game/script.rpy:762
-translate portuguese before_storm_c1771cad:
-
-    # k "Guess you will be there for a long time."
-    k "Acho que você vai ficar aí por um bom tempo."
-
-# game/script.rpy:763
-translate portuguese before_storm_ec7bcd75:
-
-    # a "Noooooooooooo-"
-    a "Nãããããããããão—"
-
-# game/script.rpy:764
-translate portuguese before_storm_6b49a3bc:
-
-    # k "Come on, it will be fine, i am here."
-    k "Vamos, vai ficar tudo bem. Estou aqui."
-
-# game/script.rpy:767
-translate portuguese before_storm_7408f054:
-
-    # "O Ato 3 está incompleto. O que vem a seguir contém spoilers do final ruim: Mila morre após comer um lírio venenoso; Lynx tenta segui-la com outro lírio; e Artur incendeia as flores, enquanto Juju corre para o fogo. Esses acontecimentos ainda podem mudar."
-    "O Ato 3 está incompleto. O que vem a seguir contém spoilers do final ruim: Mila morre após comer um lírio venenoso; Lynx tenta segui-la com outro lírio; e Artur incendeia as flores, enquanto Juju corre para o fogo. Esses acontecimentos ainda podem mudar."
-
-# game/script.rpy:769
-translate portuguese before_storm_7b954ddc:
-
-    # "Act 3 is incomplete. What follows contains spoilers for the bad ending: Mila dies after eating a poisonous lily; Lynx tries to follow her with another lily; and Artur sets the flowers on fire as Juju runs into it. These events may still change."
-    "O Ato 3 está incompleto. O que vem a seguir contém spoilers do final ruim: Mila morre após comer um lírio venenoso; Lynx tenta segui-la com outro lírio; e Artur incendeia as flores, enquanto Juju corre para o fogo. Esses acontecimentos ainda podem mudar."
-
 # game/script.rpy:785
 translate portuguese at_worlds_end_cfa37e11:
 
@@ -1584,36 +1320,6 @@ translate portuguese at_worlds_end_b81eaaba:
     # l "Says the one who thinks everyone must bow to him."
     l "Diz aquele que acha que todos devem se curvar a ele."
 
-# game/script.rpy:808
-translate portuguese at_worlds_end_a3f49312:
-
-    # "Lynx: [lynx_hp]/10. Artur: [artur_hp]/10."
-    "Lynx: [lynx_hp]/10. Artur: [artur_hp]/10."
-
-# game/script.rpy:814
-translate portuguese at_worlds_end_9a5df665:
-
-    # "You try to strike upon him."
-    "Você tenta acertá-lo."
-
-# game/script.rpy:818
-translate portuguese at_worlds_end_58a3feb8:
-
-    # "You brace for what fate will throw next."
-    "Você se prepara para o que o destino vai lançar a seguir."
-
-# game/script.rpy:822
-translate portuguese at_worlds_end_1ef1d787:
-
-    # l "Why did you do this??"
-    l "Por que você fez isso??"
-
-# game/script.rpy:823
-translate portuguese at_worlds_end_0d968101:
-
-    # a "Stop talking and fight!"
-    a "Para de falar e luta!"
-
 # game/script.rpy:827
 translate portuguese at_worlds_end_51abc0e9:
 
@@ -1625,48 +1331,6 @@ translate portuguese at_worlds_end_a0b78f21:
 
     # a "What are you doing, 'Lynx'? Just me, and you, for what?"
     a "O que está fazendo, 'Lynx'? Só eu e você. Pra quê?"
-
-# game/script.rpy:834
-translate portuguese at_worlds_end_24e2164a:
-
-    # a "No! You were meant to be a friend! Why?"
-    a "Não! Você deveria ser meu amigo! Por quê?"
-
-# game/script.rpy:837
-translate portuguese at_worlds_end_4ee204e0:
-
-    # a "You hide in the shadows of your sins... You... You know #### doesn't care, right?"
-    a "Você se esconde nas sombras dos seus pecados... Você... sabe que #### não se importa, né?"
-
-# game/script.rpy:841
-translate portuguese at_worlds_end_7e3a3d00:
-
-    # l "So, have you found someone to fight for yet?"
-    l "Então, já encontrou alguém por quem lutar?"
-
-# game/script.rpy:844
-translate portuguese at_worlds_end_7c8dfa00:
-
-    # l "Join me in our last dance!"
-    l "Dance comigo uma última vez!"
-
-# game/script.rpy:847
-translate portuguese at_worlds_end_3840c179:
-
-    # l "Forgive me, #### for i had a dream."
-    l "Perdoe-me, ####, pois tive um sonho."
-
-# game/script.rpy:850
-translate portuguese at_worlds_end_b63b3705:
-
-    # a "An Jack becomes a King. Whoever is dealing the cards today... Ugh."
-    a "Um Valete vira Rei. Quem estiver distribuindo as cartas hoje... Ugh."
-
-# game/script.rpy:852
-translate portuguese at_worlds_end_ebbd49a0:
-
-    # l "What's the purpose of this? The Jack always fall to a King."
-    l "Qual é o propósito disso? O Valete sempre cai diante do Rei."
 
 # game/script.rpy:865
 translate portuguese a_dreamy_requiem_0ab13d75:
@@ -1722,12 +1386,6 @@ translate portuguese a_dreamy_requiem_2ee4d9d0:
     # "*Mila rushes to spit it out*"
     "*Mila se apressa para cuspir a flor*"
 
-# game/script.rpy:885
-translate portuguese a_dreamy_requiem_d1d45db0:
-
-    # l "Okay, uh, come on, its.... Its letal!"
-    l "Tá, ah, vamos, é... é letal!"
-
 # game/script.rpy:887
 translate portuguese a_dreamy_requiem_691c4e93:
 
@@ -1751,12 +1409,6 @@ translate portuguese a_dreamy_requiem_4e2f01e8:
 
     # m "{cps=28}I....{/cps}"
     m "{cps=28}Eu...{/cps}"
-
-# game/script.rpy:897
-translate portuguese a_dreamy_requiem_4f6b3d4e:
-
-    # m "{cps=26}I don't know... G- Lynx.{/cps}"
-    m "{cps=26}Eu não sei... L-Lynx.{/cps}"
 
 # game/script.rpy:900
 translate portuguese a_dreamy_requiem_7f6faf4e:
@@ -2224,18 +1876,6 @@ translate portuguese strings:
     new "Ato ???? - a!Ç^)_."
 # TODO: Translation updated at 2026-11-04 07:37
 
-# game/script.rpy:780
-translate portuguese before_storm_445bf47b:
-
-    # "O Ato 3 está incompleto. O que vem a seguir contém spoilers do final ruim."
-    "O Ato 3 está incompleto. O que vem a seguir contém spoilers do final ruim."
-
-# game/script.rpy:782
-translate portuguese before_storm_cee3da8e:
-
-    # "Act 3 is incomplete. What follows contains spoilers for the bad ending."
-    "O Ato 3 está incompleto. O que vem a seguir contém spoilers do final ruim."
-
 translate portuguese strings:
 
     # game/script.rpy:35
@@ -2252,343 +1892,283 @@ translate portuguese strings:
 translate portuguese before_storm_c5956256:
 
     # m "Maybe we can search for... hm... Artur first?"
-    m ""
+    m "Talvez a gente possa procurar... hm... o Artur primeiro?"
 
 # game/script.rpy:738
 translate portuguese before_storm_9fbc1ab4:
 
     # k "It makes sense, actually. Any ideas though?"
-    k ""
+    k "Faz sentido, na verdade. Tem alguma ideia?"
 
 # game/script.rpy:739
 translate portuguese before_storm_43186a1a:
 
     # m "I think i know a place, maybe."
-    m ""
+    m "Acho que sei de um lugar, talvez."
 
 # game/script.rpy:744
 translate portuguese before_storm_dcb05b35:
 
     # "*The wind blows stronger.*"
-    ""
+    "*O vento fica mais forte.*"
 
 # game/script.rpy:745
 translate portuguese before_storm_f60aecab:
 
     # k "Is this who i think it is?"
-    k ""
+    k "É quem eu estou pensando?"
 
 # game/script.rpy:746
 translate portuguese before_storm_2f9cecd5:
 
     # j "Heeey, long time no see!"
-    j ""
+    j "Eii, quanto tempo!"
 
 # game/script.rpy:747
 translate portuguese before_storm_8a3797a2:
 
     # j "Finally i found someone cool again!"
-    j ""
-
-# game/script.rpy:748
-translate portuguese before_storm_f608652d:
-
-    # k ""
-    k ""
-
-# game/script.rpy:760
-translate portuguese before_storm_bafec0bb:
-
-    # l "*blushes, or would if his cat form allowed him* \nI... COME ON KATIE! \n*Sighs, though shaking his head*"
-    l ""
-
-# game/script.rpy:777
-translate portuguese before_storm_6d9edd66:
-
-    # l "...I guess now we should search for someone else? Juju perhaps?"
-    l ""
-
-# game/script.rpy:793
-translate portuguese before_storm_56098c98:
-
-    # j "Uh, no, sorry!"
-    j ""
-
-# game/script.rpy:794
-translate portuguese before_storm_27728571:
-
-    # j "We can always try to find everyone. let's.... try Lynx first?"
-    j ""
-
-# game/script.rpy:805
-translate portuguese before_storm_07c0b0d4:
-
-    # k "Do you think Juju already ran away from those people by this time?"
-    k ""
-
-# game/script.rpy:815
-translate portuguese before_storm_1c683e3b:
-
-    # k "Everyone looks so busy. Grab a cat, drop somewhere else, act like it's fine..."
-    k ""
-
-# game/script.rpy:816
-translate portuguese before_storm_8e6c8bbe:
-
-    # a "Yeah. Now.... uh... they just left me, soo..."
-    a ""
-
-# game/script.rpy:817
-translate portuguese before_storm_fcd08e03:
-
-    # a "I think, first mission of today! Find Mila!"
-    a ""
+    j "Finalmente encontrei alguém legal de novo!"
 
 # game/script.rpy:860
 translate portuguese a_dreamy_requiem_8dcf8c15:
 
     # m "{cps=26}I don't know... L-Lynx.{/cps}"
-    m ""
+    m "{cps=26}Eu não sei... L-Lynx.{/cps}"
 
 # game/script.rpy:987
 translate portuguese at_worlds_end_5f6da3b1:
 
     # a "You're just envious, kid. Just because you were always in the shadows of someone."
-    a ""
+    a "Você só está com inveja, garoto. Porque sempre viveu à sombra de alguém."
 
 # game/script.rpy:989
 translate portuguese at_worlds_end_81cc0cd2:
 
     # l "SHUT THE FUCK UP!"
-    l ""
+    l "CALA A BOCA, PORRA!"
 
 # game/script.rpy:994
 translate portuguese at_worlds_end_6de06606:
 
     # l "So, have you found someone to fight for yet? Buddy."
-    l ""
+    l "Então, já encontrou alguém por quem lutar, parceiro?"
 
 # game/script.rpy:1005
 translate portuguese whywedointhis_24e2164a:
 
     # a "No! You were meant to be a friend! Why?"
-    a ""
+    a "Não! Você deveria ser meu amigo! Por quê?"
 
 # game/script.rpy:1007
 translate portuguese whywedointhis_cda2df0d:
 
     # l "Mila? I can hear you somewhere! Join me in our last dance!"
-    l ""
+    l "Mila? Consigo ouvir você em algum lugar! Venha dançar comigo uma última vez!"
 
 # game/script.rpy:1009
 translate portuguese whywedointhis_4ee204e0:
 
     # a "You hide in the shadows of your sins... You... You know #### doesn't care, right?"
-    a ""
+    a "Você se esconde nas sombras dos seus pecados... Você... sabe que #### não se importa, né?"
 
 # game/script.rpy:1016
 translate portuguese whywedointhis1_3840c179:
 
     # l "Forgive me, #### for i had a dream."
-    l ""
+    l "Perdoe-me, ####, pois tive um sonho."
 
 # game/script.rpy:1018
 translate portuguese whywedointhis1_c94f7e7b:
 
     # a "What's the point of all of this?"
-    a ""
+    a "Qual é o sentido de tudo isso?"
 
 # game/script.rpy:1020
 translate portuguese whywedointhis1_77e4b8b7:
 
     # a "You're losing your already lost mind!"
-    a ""
+    a "Você está perdendo a cabeça, que já estava perdida!"
 
 # game/script.rpy:1022
 translate portuguese whywedointhis1_1a032036:
 
     # l "Come and find me, Mila. Put me out of this suffering and let your love tear me apart."
-    l ""
+    l "Venha me encontrar, Mila. Acabe com este sofrimento e deixe seu amor me despedaçar."
 
 # game/script.rpy:1028
 translate portuguese whywedointhis2_31d796dc:
 
     # a "...."
-    a ""
+    a "...."
 
 # game/script.rpy:1030
 translate portuguese whywedointhis2_2e3dc61c:
 
     # l "...."
-    l ""
+    l "...."
 
 # game/script.rpy:1032
 translate portuguese whywedointhis2_83ec9b1b:
 
     # l "We could have been friends, but instead, you overlooked me like everyone."
-    l ""
+    l "Poderíamos ter sido amigos, mas você me ignorou, como todo mundo."
 
 # game/script.rpy:1039
 translate portuguese whywedointhis3_4c0c658a:
 
     # a "I want to understand, actually. Why?"
-    a ""
-
-# game/script.rpy:1041
-translate portuguese whywedointhis3_797cbce3:
-
-    # "*The wind bustles once more.*"
-    ""
+    a "Na verdade, eu quero entender. Por quê?"
 
 # game/script.rpy:1050
 translate portuguese whywedointhis3_2db33fdd:
 
     # k "Stand up and fight! Isn't this what you wished?"
-    k ""
+    k "Levante e lute! Não era isso que você queria?"
 
 # game/script.rpy:1052
 translate portuguese whywedointhis3_07bdde05:
 
     # "....."
-    ""
+    "....."
 
 # game/script.rpy:1054
 translate portuguese whywedointhis3_ae8a4abf:
 
     # "I'm just another witness to this."
-    ""
+    "Sou só mais uma testemunha disso."
 
 # game/script.rpy:1060
 translate portuguese whywedointhis3_dd779e05:
 
     # v "Would you say i'm worthy of love?"
-    v ""
+    v "Você diria que sou digna de amor?"
 
 # game/script.rpy:1062
 translate portuguese whywedointhis3_9149c690:
 
     # v "Give me a reason to believe!"
-    v ""
+    v "Me dê um motivo para acreditar!"
 
 # game/script.rpy:1064
 translate portuguese whywedointhis3_6a0a918c:
 
     # v "Do i need to look at the heaven above..."
-    v ""
+    v "Será que preciso olhar para o céu..."
 
 # game/script.rpy:1066
 translate portuguese whywedointhis3_c0852bcf:
 
     # v "...So that maybe all of this will suceed?"
-    v ""
+    v "...para que talvez tudo isso dê certo?"
 
 # game/script.rpy:1068
 translate portuguese whywedointhis3_82091822:
 
     # k "..."
-    k ""
+    k "..."
 
 # game/script.rpy:1070
 translate portuguese whywedointhis3_632db495:
 
     # v "Scattered hearts across the floor,"
-    v ""
+    v "Corações espalhados pelo chão,"
 
 # game/script.rpy:1072
 translate portuguese whywedointhis3_902614c1:
 
     # v "I can't believe no more that maybe there's..."
-    v ""
+    v "Já não consigo acreditar que talvez exista..."
 
 # game/script.rpy:1074
 translate portuguese whywedointhis3_a5e4e313:
 
     # v "...a reason, to believe and maybe a..."
-    v ""
+    v "...um motivo para acreditar e talvez uma..."
 
 # game/script.rpy:1076
 translate portuguese whywedointhis3_7e3d2828:
 
     # v "Shot at heaven's love again!"
-    v ""
+    v "Chance de encontrar o amor do céu outra vez!"
 
 # game/script.rpy:1078
 translate portuguese whywedointhis3_d390a0fa:
 
     # v_k "In aeternum in (Forever in a)"
-    v_k ""
+    v_k "In aeternum in (Para sempre em um)"
 
 # game/script.rpy:1080
 translate portuguese whywedointhis3_00f52e32:
 
     # v_k "Somnio Amoeno (Lovely dream)"
-    v_k ""
+    v_k "Somnio Amoeno (Sonho adorável)"
 
 # game/script.rpy:1082
 translate portuguese whywedointhis3_918bfbaa:
 
     # v_k "Vix exspecto ut (I can't wait to)"
-    v_k ""
+    v_k "Vix exspecto ut (Mal posso esperar para)"
 
 # game/script.rpy:1084
 translate portuguese whywedointhis3_72dfd7aa:
 
     # v_k "Videam quomodo sentiatur (See how it feels to-)"
-    v_k ""
+    v_k "Videam quomodo sentiatur (Ver como é sentir—)"
 
 # game/script.rpy:1086
 translate portuguese whywedointhis3_338b0a45:
 
     # k "Love me again at last!"
-    k ""
+    k "Ame-me de novo, enfim!"
 
 # game/script.rpy:1088
 translate portuguese whywedointhis3_f0ae0cb9:
 
     # v "Shred the worries of my heart!"
-    v ""
+    v "Destrua as angústias do meu coração!"
 
 # game/script.rpy:1090
 translate portuguese whywedointhis3_27d4a753:
 
     # k "Let all dreams bloom again!"
-    k ""
+    k "Deixe todos os sonhos florescerem outra vez!"
 
 # game/script.rpy:1092
 translate portuguese whywedointhis3_005bdc30:
 
     # v "Don't let this tragedy be how it ends!"
-    v ""
+    v "Não deixe que esta tragédia seja o nosso fim!"
 
 # game/script.rpy:1094
 translate portuguese whywedointhis3_4004ca92:
 
     # k "Wake me up from this evanescent memento-"
-    k ""
+    k "Desperte-me desta lembrança efêmera—"
 
 # game/script.rpy:1096
 translate portuguese whywedointhis3_439362b2:
 
     # v "Why do you think you can save us from this lament-"
-    v ""
+    v "Por que pensa que pode nos salvar deste lamento—"
 
 # game/script.rpy:1098
 translate portuguese whywedointhis3_fcc82bbb:
 
     # v_k "I am all i could ever be for you!"
-    v_k ""
+    v_k "Sou tudo o que eu poderia ser por você!"
 
 # game/script.rpy:1100
 translate portuguese whywedointhis3_c2983b85:
 
     # v_k "I am all but a dying dream for you."
-    v_k ""
+    v_k "Sou apenas um sonho que morre para você."
 
 # game/script.rpy:1102
 translate portuguese whywedointhis3_6c89058d:
 
     # "The flowers bloom once more."
-    ""
+    "As flores florescem mais uma vez."
 
 translate portuguese strings:
 
@@ -2619,4 +2199,500 @@ translate portuguese strings:
     # game/script.rpy:1104
     old "SubAct 1 - Dies Quo Viviana Rursus Amavit - Complete.."
     new "SubAto 1 - Dies Quo Viviana Rursus Amavit - Completo"
+
+# TODO: Translation updated at 2026-11-25 11:07
+
+# game/script.rpy:497
+translate portuguese nuzzle_choice_54eb3a99:
+
+    # "*Something walks by, breathing heavily*"
+    "*Alguém passa por perto, respirando com dificuldade*"
+
+# game/script.rpy:499
+translate portuguese nuzzle_choice_e5d03fe8:
+
+    # "Ah... i..."
+    "Ah... eu..."
+
+# game/script.rpy:744
+translate portuguese before_storm_f9519f94:
+
+    # k "Yeah. I'm happier now."
+    k "É. Agora estou mais feliz."
+
+# game/script.rpy:745
+translate portuguese before_storm_11e371e3:
+
+    # j "Also, you don't know who i found in the way here!"
+    j "E você nem sabe quem encontrei pelo caminho!"
+
+# game/script.rpy:746
+translate portuguese before_storm_d5625e8a:
+
+    # m "Who?"
+    m "Quem?"
+
+# game/script.rpy:747
+translate portuguese before_storm_0286ba08:
+
+    # a "MEEEE!"
+    a "EUZINHO!"
+
+# game/script.rpy:748
+translate portuguese before_storm_0d659dd9:
+
+    # k "Great, this will be soo chaotic."
+    k "Ótimo, isso vai ser tããão caótico."
+
+# game/script.rpy:749
+translate portuguese before_storm_3b80fe34:
+
+    # a "Hey, a little chaos never did bad to anyone!"
+    a "Ei, um pouquinho de caos nunca fez mal a ninguém!"
+
+# game/script.rpy:750
+translate portuguese before_storm_5eb8ae40:
+
+    # k "Sure, coming from you i don't trust it."
+    k "Claro. Vindo de você, não acredito nisso."
+
+# game/script.rpy:751
+translate portuguese before_storm_51f4fcee:
+
+    # m "Well, maybe this what we need, Katie. Just chill for a moment."
+    m "Bem, talvez seja disso que precisamos, Katie. Vamos relaxar um pouco."
+
+# game/script.rpy:752
+translate portuguese before_storm_f04fab07:
+
+    # j "Alright... yeah. I could take a nap, you know?"
+    j "Tudo bem... é. Eu podia tirar uma soneca, sabe?"
+
+# game/script.rpy:753
+translate portuguese before_storm_4d2ad908:
+
+    # a "Already?? We barely..."
+    a "Já?? A gente mal..."
+
+# game/script.rpy:754
+translate portuguese before_storm_c4cf73f2:
+
+    # "*you hear some rustling far away..*"
+    "*Você ouve um farfalhar ao longe...*"
+
+# game/script.rpy:755
+translate portuguese before_storm_013c1587:
+
+    # k "Oh, food. I was hungry."
+    k "Ah, comida. Eu estava com fome."
+
+# game/script.rpy:756
+translate portuguese before_storm_f460ef4b:
+
+    # "You feel your heartbeat quickening."
+    "Você sente o coração acelerar."
+
+# game/script.rpy:762
+translate portuguese lynx_trigger_9cb8d76a:
+
+    # "Your heartbeat quickens once more. But it's possibly just hunger"
+    "Seu coração acelera de novo. Mas talvez seja só fome."
+
+# game/script.rpy:764
+translate portuguese lynx_trigger_d1ba09b9:
+
+    # k "Okay, can we? I'm going."
+    k "Tá, vamos? Estou indo."
+
+# game/script.rpy:765
+translate portuguese lynx_trigger_eeb21e21:
+
+    # m "Sure, missus."
+    m "Claro, senhorita."
+
+# game/script.rpy:766
+translate portuguese lynx_trigger_6c8d3ec6:
+
+    # a "Alright! Coming!"
+    a "Beleza! Estou indo!"
+
+# game/script.rpy:768
+translate portuguese lynx_trigger_6f3c77d5:
+
+    # k "So, where was those people going, Artur? You who seem to be more energetic.."
+    k "Então, para onde aquelas pessoas estavam indo, Artur? Você parece ter mais energia..."
+
+# game/script.rpy:769
+translate portuguese lynx_trigger_2c9f0274:
+
+    # a "Some sorta flower festival. Wanna check it?"
+    a "Algum tipo de festival das flores. Quer dar uma olhada?"
+
+# game/script.rpy:770
+translate portuguese lynx_trigger_f3c650ff:
+
+    # k "Yeah, sure."
+    k "É, claro."
+
+# game/script.rpy:771
+translate portuguese lynx_trigger_d998f355:
+
+    # k "But it needs to be really now? I just ate..."
+    k "Mas precisa ser agora mesmo? Acabei de comer..."
+
+# game/script.rpy:772
+translate portuguese lynx_trigger_54dfc872:
+
+    # j "Come on, it will be fun!"
+    j "Vamos, vai ser divertido!"
+
+# game/script.rpy:776
+translate portuguese lynx_trigger_7324c599:
+
+    # k "I know that guy, let me follow him now!"
+    k "Conheço aquele cara. Deixa eu segui-lo!"
+
+# game/script.rpy:778
+translate portuguese lynx_trigger_5aab4ae2:
+
+    # l "I swear people used to say black cats are a bad omen. So why did they also pick me!"
+    l "Juro que as pessoas diziam que gatos pretos davam azar. Então por que também me escolheram?"
+
+# game/script.rpy:779
+translate portuguese lynx_trigger_699a6d5c:
+
+    # k "You're fluffy."
+    k "Você é fofinho."
+
+# game/script.rpy:782
+translate portuguese lynx_trigger_3a57cf0c:
+
+    # l "Mila is more fluffy!"
+    l "A Mila é mais fofa!"
+
+# game/script.rpy:783
+translate portuguese lynx_trigger_5c823261:
+
+    # k "Oh, the king can't spend a moment without talking about the queen."
+    k "Ah, o rei não consegue passar um instante sem falar da rainha."
+
+# game/script.rpy:784
+translate portuguese lynx_trigger_bafec0bb:
+
+    # l "*blushes, or would if his cat form allowed him* \nI... COME ON KATIE! \n*Sighs, though shaking his head*"
+    l "*fica corado, ou ficaria se sua forma de gato permitisse* \nEu... AH, KATIE! \n*suspira, balançando a cabeça*"
+
+# game/script.rpy:785
+translate portuguese lynx_trigger_114d9b56:
+
+    # k "So, any idea of how to get rid of... *looks at the student holding him*"
+    k "Então, alguma ideia de como se livrar de... *olha para o estudante que o segura*"
+
+# game/script.rpy:786
+translate portuguese lynx_trigger_d0767d68:
+
+    # l "No, i dont."
+    l "Não, não tenho."
+
+# game/script.rpy:787
+translate portuguese lynx_trigger_4b50a58c:
+
+    # "*A minute or two later, a bus passes, and the student leaves him to go on the bus*"
+    "*Um ou dois minutos depois, um ônibus passa e o estudante o solta para embarcar.*"
+
+# game/script.rpy:788
+translate portuguese lynx_trigger_c4d033ca:
+
+    # l "Finally. I crave the warmth of someone, not theirs though."
+    l "Finalmente. Sinto falta do calor de alguém, mas não do deles."
+
+# game/script.rpy:789
+translate portuguese lynx_trigger_ac6575aa:
+
+    # l "I wonder, though. One of they had a cross. I was taught that cats don't go to heaven, because no soul."
+    l "Fico pensando, porém. Um deles tinha uma cruz. Me ensinaram que gatos não vão para o céu porque não têm alma."
+
+# game/script.rpy:790
+translate portuguese lynx_trigger_3925bf1d:
+
+    # "You listen intently."
+    "Você escuta com atenção."
+
+# game/script.rpy:791
+translate portuguese lynx_trigger_c9b190ab:
+
+    # l "Does that mean we are condemned out of heaven just because we became this, no matter what our actions were?"
+    l "Isso quer dizer que estamos condenados a ficar fora do céu só por termos nos tornado isso, não importa o que tenhamos feito?"
+
+# game/script.rpy:792
+translate portuguese lynx_trigger_02d7948b:
+
+    # k "Woah, so deep thoughts outta nowhere."
+    k "Uau, que pensamentos profundos do nada."
+
+# game/script.rpy:793
+translate portuguese lynx_trigger_2d481540:
+
+    # l "I know, but, like, does a god so lovingly to make many creations decides to throw those who cannot worship him?"
+    l "Eu sei, mas... um deus que cria tantas coisas com tanto amor decide expulsar quem não pode adorá-lo?"
+
+# game/script.rpy:794
+translate portuguese lynx_trigger_6ab71b12:
+
+    # l "Why? Does the fact we became something other than what he set us as makes us a instant sin meant to be erased?"
+    l "Por quê? O fato de termos nos tornado algo diferente do que ele nos fez para ser nos transforma num pecado que merece ser apagado?"
+
+# game/script.rpy:795
+translate portuguese lynx_trigger_548c408d:
+
+    # k "I didn't become a cat just to be still reflecting on religious things, please!"
+    k "Eu não virei gata pra continuar refletindo sobre religião, por favor!"
+
+# game/script.rpy:796
+translate portuguese lynx_trigger_3ca119eb:
+
+    # l "And now that i think, it's not only about cats that this applies to."
+    l "E agora que penso nisso, não se aplica só aos gatos."
+
+# game/script.rpy:797
+translate portuguese lynx_trigger_7c491dc7:
+
+    # k "What matters is not what form you have been given, only the form you see yourself as, the one you truly are."
+    k "O que importa não é a forma que deram a você, mas a forma como você se vê, quem você realmente é."
+
+# game/script.rpy:799
+translate portuguese lynx_trigger_c363b123:
+
+    # l "Thanks...?"
+    l "Obrigado...?"
+
+# game/script.rpy:801
+translate portuguese lynx_trigger_6d9edd66:
+
+    # l "...I guess now we should search for someone else? Juju perhaps?"
+    l "...Acho que agora devíamos procurar outra pessoa. Talvez a Juju?"
+
+# game/script.rpy:805
+translate portuguese lynx_trigger_7783d776:
+
+    # k "Ugh, come on, Juju i will find you!"
+    k "Ugh, vamos, Juju. Vou encontrar você!"
+
+# game/script.rpy:807
+translate portuguese lynx_trigger_f1c99e96:
+
+    # "*You sighted Juju. She seems to be barely evading them. Thus you meow loudly at them*"
+    "*Você avista Juju. Ela mal consegue escapar deles. Então mia alto para chamar a atenção.*"
+
+# game/script.rpy:808
+translate portuguese lynx_trigger_bca06314:
+
+    # j "Thanks for the distraction! *manages to run away from the colleague looking on your direction*" with hpunch
+    j "Obrigada por me distrair! *consegue fugir da colega que olhava na sua direção*" with hpunch
+
+# game/script.rpy:810
+translate portuguese lynx_trigger_16e6cfd3:
+
+    # j "They think calico is something insanely rare, but when theres literal nebelungs and york chocolates... yeah"
+    j "Eles acham que gatos calico são incrivelmente raros, mas tem nebelungs e york chocolates de verdade por aí... é."
+
+# game/script.rpy:811
+translate portuguese lynx_trigger_0c85b115:
+
+    # k "I am a nebelung? I mean, i didn't see a mirror yet..."
+    k "Eu sou uma nebelung? Quer dizer, ainda nem me olhei no espelho..."
+
+# game/script.rpy:812
+translate portuguese lynx_trigger_7af8080f:
+
+    # j "Yeah, a fluffy, quiet nebelung. And im what, a shorthair calico?"
+    j "É, uma nebelung fofinha e quietinha. E eu sou o quê, uma calico de pelo curto?"
+
+# game/script.rpy:813
+translate portuguese lynx_trigger_68a23d97:
+
+    # k "I didn't study it much, you know? The cat knower is lynx, wherever he is."
+    k "Não estudei muito isso, sabe? Quem entende de gatos é o Lynx, seja lá onde ele estiver."
+
+# game/script.rpy:814
+translate portuguese lynx_trigger_8a7b33c7:
+
+    # j "Hey, we are fine! Don't worry, we can just find the rest now i guess!"
+    j "Ei, estamos bem! Não se preocupe, acho que agora podemos encontrar os outros!"
+
+# game/script.rpy:815
+translate portuguese lynx_trigger_edbd9e45:
+
+    # k "Yeah, any ideas though?"
+    k "É, mas tem alguma ideia?"
+
+# game/script.rpy:817
+translate portuguese lynx_trigger_56098c98:
+
+    # j "Uh, no, sorry!"
+    j "Ah, não, desculpa!"
+
+# game/script.rpy:818
+translate portuguese lynx_trigger_27728571:
+
+    # j "We can always try to find everyone. let's.... try Lynx first?"
+    j "Sempre podemos tentar encontrar todo mundo. Vamos... tentar achar o Lynx primeiro?"
+
+# game/script.rpy:822
+translate portuguese lynx_trigger_e344a168:
+
+    # k "Poor Artur, though maybe he will have fun with this."
+    k "Coitado do Artur, mas talvez ele esteja se divertindo com isso."
+
+# game/script.rpy:824
+translate portuguese lynx_trigger_b6bf00db:
+
+    # "*Someone is playing with Artur. As soon as he sights me, he lets a sigh of relief.*"
+    "*Alguém está brincando com Artur. Assim que me avista, ele solta um suspiro de alívio.*"
+
+# game/script.rpy:825
+translate portuguese lynx_trigger_08bfc9be:
+
+    # a "Katie, finally! It's not the best thing to be passed around like a fluffy ball!"
+    a "Katie, até que enfim! Não é muito legal ficar passando de mão em mão como uma bolinha peluda!"
+
+# game/script.rpy:827
+translate portuguese lynx_trigger_85e6f213:
+
+    # k "Yeah, i see. Though it feels nice, from a distance obviously."
+    k "É, entendi. Embora pareça bom, de longe, obviamente."
+
+# game/script.rpy:829
+translate portuguese lynx_trigger_07c0b0d4:
+
+    # k "Do you think Juju already ran away from those people by this time?"
+    k "Acha que a Juju já conseguiu fugir daquelas pessoas a essa altura?"
+
+# game/script.rpy:830
+translate portuguese lynx_trigger_5a49c02b:
+
+    # a "She's surely quick, i believe she is looong gone. "
+    a "Ela é bem rápida. Aposto que já foi looonge."
+
+# game/script.rpy:831
+translate portuguese lynx_trigger_d898140f:
+
+    # k "You look proud of her, huh."
+    k "Você parece orgulhoso dela, hein."
+
+# game/script.rpy:832
+translate portuguese lynx_trigger_2db748c1:
+
+    # a "We must be proud of our friends!"
+    a "Temos que ter orgulho dos nossos amigos!"
+
+# game/script.rpy:833
+translate portuguese lynx_trigger_cb9117cf:
+
+    # k "I know, but... Hm... Guess you found a new liking other than chemistry."
+    k "Eu sei, mas... hm... parece que você encontrou algo de que gosta além de química."
+
+# game/script.rpy:834
+translate portuguese lynx_trigger_6dd47d77:
+
+    # a "HEEEEY- \n*tries to get out to go at her, to no avail*"
+    a "HEEEEI— \n*tenta se soltar para ir atrás dela, sem sucesso*"
+
+# game/script.rpy:835
+translate portuguese lynx_trigger_c1771cad:
+
+    # k "Guess you will be there for a long time."
+    k "Acho que você vai ficar aí por um bom tempo."
+
+# game/script.rpy:836
+translate portuguese lynx_trigger_ec7bcd75:
+
+    # a "Noooooooooooo-"
+    a "Nãããããããããão—"
+
+# game/script.rpy:837
+translate portuguese lynx_trigger_6b49a3bc:
+
+    # k "Come on, it will be fine, i am here."
+    k "Vamos, vai ficar tudo bem. Estou aqui."
+
+# game/script.rpy:839
+translate portuguese lynx_trigger_1c683e3b:
+
+    # k "Everyone looks so busy. Grab a cat, drop somewhere else, act like it's fine..."
+    k "Todo mundo parece tão ocupado. Pegam um gato, deixam em outro lugar e agem como se estivesse tudo bem..."
+
+# game/script.rpy:840
+translate portuguese lynx_trigger_8e6c8bbe:
+
+    # a "Yeah. Now.... uh... they just left me, soo..."
+    a "É. Agora... ah... eles simplesmente me deixaram aqui, então..."
+
+# game/script.rpy:841
+translate portuguese lynx_trigger_fcd08e03:
+
+    # a "I think, first mission of today! Find Mila!"
+    a "Acho que a primeira missão de hoje é encontrar a Mila!"
+
+# game/script.rpy:842
+translate portuguese lynx_trigger_5f74a492:
+
+    # k "Actually, that calico cat seems... familiar. Is it whom i think it is?"
+    k "Na verdade, aquela gata calico parece... familiar. Será que é quem estou pensando?"
+
+# game/script.rpy:843
+translate portuguese lynx_trigger_dfb449a4:
+
+    # j "HEEEEEY It's me!"
+    j "EIIII, sou eu!"
+
+# game/script.rpy:845
+translate portuguese lynx_trigger_da05f89b:
+
+    # "Act 3 is incomplete."
+    "O Ato 3 está incompleto."
+
+# game/script.rpy:848
+translate portuguese festival_8230bf41:
+
+    # "This is still in progress. See you soon!"
+    "Isto ainda está em desenvolvimento. Até breve!"
+
+# game/script.rpy:875
+translate portuguese a_dreamy_requiem_66448276:
+
+    # l "Okay, uh, come on, its.... Its lethal!"
+    l "Tá, ah, vamos... é... é letal!"
+
+# game/script.rpy:1065
+translate portuguese whywedointhis3_724ee152:
+
+    # "*The wind rustles once more.*"
+    "*O vento farfalha mais uma vez.*"
+
+translate portuguese strings:
+
+    # game/script.rpy:757
+    old "What to do?"
+    new "O que fazer?"
+
+    # game/script.rpy:759
+    old "Eat"
+    new "Comer"
+
+    # game/script.rpy:763
+    old "Wait for someone."
+    new "Esperar alguém."
+
+# TODO: Translation updated at 2026-11-25 11:14
+
+translate portuguese strings:
+
+    # game/script.rpy:503
+    old "End of Demo"
+    new "Fim da Demo"
+
+    # game/script.rpy:507
+    old "Act 2 Coming Soon"
+    new "Ato 2 Em Breve"
 

@@ -23,5 +23,5 @@ translate portuguese strings:
 
     # game/options.rpy:32
     old "A game created during the Digital Games course.\n\nMade originally as a board game, turned digital as a VN.\n\nSpecial thanks to Izaquiel, for giving me the final push to start making this game.\n\nAnd also for playtesting this.... Right?\n\nNow featuring Discord RPC and some extras.\n\nOST soon when i stop procrastinating for once."
-    new ""
+    new "Um jogo criado durante o curso de Jogos Digitais.\n\nOriginalmente feito como jogo de tabuleiro e transformado em uma visual novel.\n\nAgradecimentos especiais a Izaquiel, por me dar o impulso final para começar a criar este jogo.\n\nE também por testar o jogo... certo?\n\nA trilha sonora sai quando eu finalmente parar de procrastinar."
 

@@ -379,13 +379,21 @@ translate portuguese strings:
 
     # game/screens.rpy:280
     old "Artur: [artur_rl_lynx]"
-    new ""
+    new "Artur: [artur_rl_lynx]"
 
     # game/screens.rpy:281
     old "Juju: [juju_rl_lynx]"
-    new ""
+    new "Juju: [juju_rl_lynx]"
 
     # game/screens.rpy:282
     old "Lynx: [lynx_rl_lynx]"
-    new ""
+    new "Lynx: [lynx_rl_lynx]"
+
+# TODO: Translation updated at 2026-11-25 11:07
+
+translate portuguese strings:
+
+    # game/screens.rpy:282
+    old "Katie: [katie_rl_lynx]"
+    new "Katie: [katie_rl_lynx]"
 

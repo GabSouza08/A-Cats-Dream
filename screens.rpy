@@ -279,7 +279,7 @@ screen status_screen():
                 text _("Mila: [mila_rl_lynx]")
                 text _("Artur: [artur_rl_lynx]")
                 text _("Juju: [juju_rl_lynx]")
-                text _("Lynx: [lynx_rl_lynx]")
+                text _("Katie: [katie_rl_lynx]")
             else:
                 text _("Mila: [mila_rl]")
                 text _("Artur: [artur_rl]")
